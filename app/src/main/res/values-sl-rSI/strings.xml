@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TZVA_naloga_!</string>
+    <string name="header_1">Vnos Podatkov</string>
+    <string name="header_2">Podatki shranjeni</string>
+    <string name="header_3">Izberi Jezik</string>
+    <string name="name">Ime</string>
+    <string name="surname">Priimek</string>
+    <string name="date_birth">Datum rojstva</string>
+    <string name="heart_rate">Srčni utrip(udarci/min)</string>
+    <string name="oxy">Vsebnost kisika v krvi(%)</string>
+    <string name="body_temp">Telesna temperatura(ºC)</string>
+    <string name="btn_close">Zapri</string>
+    <string name="btn_save">Shrani</string>
+    <string name="btn_lang">Spremeni Jezik</string>
+    <string name="btn_nuke">Zbriši bazo</string>
+    <string name="calendar">Izberi datum</string>
+</resources>

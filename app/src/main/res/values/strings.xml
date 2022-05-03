@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TZVA_naloga_!</string>
+    <string name="header_1">Data Input</string>
+    <string name="header_2">Data Saved</string>
+    <string name="header_3">Choose Language</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="date_birth">Date of birth</string>
+    <string name="heart_rate">Heart rate(beats/min)</string>
+    <string name="oxy">Blood oxygen content(%)</string>
+    <string name="body_temp">Body temperate(ºC)</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_lang">Change Language</string>
+    <string name="btn_nuke">Drop database</string>
+    <string name="calendar">Pick date</string>
+
+
+</resources>
