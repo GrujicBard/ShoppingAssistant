@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TZVA_naloga_!</string>
+    <string name="app_name">TZVA_projekt</string>
     <string name="header_1">Vnos Podatkov</string>
     <string name="header_2">Podatki shranjeni</string>
     <string name="header_3">Izberi Jezik</string>

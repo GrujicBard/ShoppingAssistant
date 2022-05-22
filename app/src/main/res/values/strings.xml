@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TZVA_naloga_!</string>
+    <string name="app_name">TZVA_project</string>
     <string name="header_1">Data Input</string>
     <string name="header_2">Data Saved</string>
     <string name="header_3">Choose Language</string>
@@ -14,6 +14,4 @@
     <string name="btn_lang">Change Language</string>
     <string name="btn_nuke">Drop database</string>
     <string name="calendar">Pick date</string>
-
-
 </resources>
