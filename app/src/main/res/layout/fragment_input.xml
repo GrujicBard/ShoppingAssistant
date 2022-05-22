@@ -16,110 +16,139 @@
         android:orientation="vertical">
 
 
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_name"
+            android:id="@+id/il_EAN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/et_name"
+                android:id="@+id/et_EAN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/name"
+                android:hint="@string/EAN"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:singleLine="true"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/title"
+                android:inputType="text"
+                android:singleLine="true"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/li_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description"
                 android:inputType="text"
                 android:singleLine="true"
                 tools:ignore="SpeakableTextPresentCheck"
-                android:importantForAutofill="no" />
-
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_surname"
+            android:id="@+id/il_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/et_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price"
+                android:inputType="text"
+                android:singleLine="true"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:autofillHints="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/et_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/quantity"
+                android:inputType="text"
+                android:singleLine="true"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:autofillHints="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/li_dateOfStorage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/et_dateOfStorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dateOfStorage"
+                android:inputType="date|datetime|text"
+                android:singleLine="true"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:autofillHints="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <CheckBox
+            android:id="@+id/cb_isStoredCold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:text="@string/isStoredCold" />
 
-            <EditText
-                android:id="@+id/et_surname"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/surname"
-                android:singleLine="true"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_dateBirth"
+        <CheckBox
+            android:id="@+id/cb_isFavoriteItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:text="@string/IsFavoriteItem" />
 
-            <EditText
-                android:id="@+id/et_dateBirth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/date_birth"
-                android:singleLine="true"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_heartRate"
+        <CheckBox
+            android:id="@+id/cb_isOnShoppingList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp">
-
-            <EditText
-                android:id="@+id/et_heartRate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/heart_rate"
-                android:singleLine="true"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_oxy"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp">
-
-            <EditText
-                android:id="@+id/et_oxy"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/oxy"
-                android:singleLine="true"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_bodyTemp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp">
-
-            <EditText
-                android:id="@+id/et_bodyTemp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/body_temp"
-                android:singleLine="true"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
+            android:layout_height="wrap_content"
+            android:text="@string/IsOnShoppingList" />
 
         <Button
             android:id="@+id/btn_save"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="30dp"
             android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="70dp"
             android:layout_weight="1"
-            android:text="@string/btn_save" />
+            android:text="@string/btn_save"
+            android:textColor="#000000"
+            tools:ignore="TextContrastCheck" />
 
     </LinearLayout>
 

@@ -15,4 +15,15 @@
     <string name="btn_lang">Spremeni Jezik</string>
     <string name="btn_nuke">Zbriši bazo</string>
     <string name="calendar">Izberi datum</string>
+
+    <!-- Izdelki -->
+    <string name="EAN">EAN</string>
+    <string name="title">Naziv</string>
+    <string name="dateOfStorage">Datum skeniranja</string>
+    <string name="description">Opis</string>
+    <string name="price">Cena</string>
+    <string name="quantity">Količina</string>
+    <string name="isStoredCold">Je namenjeno hladnemu shranjevanju</string>
+    <string name="IsFavoriteItem">Je priljubljeni izdelek</string>
+    <string name="IsOnShoppingList">Je na nakupovlanem seznamu</string>
 </resources>

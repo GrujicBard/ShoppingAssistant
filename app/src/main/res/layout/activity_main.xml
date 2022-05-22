@@ -7,17 +7,17 @@
     android:orientation="vertical">
 
 
-
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabTextAppearance="@style/CustomTabSytle"
         app:tabBackground="@color/blue"
         app:tabGravity="fill"
         app:tabInlineLabel="true"
         app:tabMode="fixed"
-        app:tabTextColor="@color/white"/>
+        app:tabTextAppearance="@style/CustomTabSytle"
+        app:tabTextColor="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
         
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"

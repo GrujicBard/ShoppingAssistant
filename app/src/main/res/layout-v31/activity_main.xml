@@ -21,44 +21,47 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_name"
+            android:id="@+id/il_EAN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/et_name"
+                android:id="@+id/et_EAN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/name"
+                android:hint="@string/EAN"
+                android:inputType="text"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_surname"
+            android:id="@+id/il_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp">
 
             <EditText
-                android:id="@+id/et_surname"
+                android:id="@+id/et_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/surname" />
+                android:hint="@string/title"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_dateBirth"
+            android:id="@+id/li_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp">
 
             <EditText
-                android:id="@+id/et_dateBirth"
+                android:id="@+id/et_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/date_birth" />
+                android:hint="@string/description"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

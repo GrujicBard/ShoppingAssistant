@@ -9,7 +9,6 @@ import com.example.tzva_naloga_1.adapters.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
@@ -37,6 +36,5 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }.attach();
-
     }
 }

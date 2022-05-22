@@ -14,4 +14,15 @@
     <string name="btn_lang">Change Language</string>
     <string name="btn_nuke">Drop database</string>
     <string name="calendar">Pick date</string>
+
+    <!-- Items -->
+    <string name="EAN">EAN</string>
+    <string name="title">Title</string>
+    <string name="dateOfStorage">Date of storage</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="isStoredCold">Is stored cold</string>
+    <string name="IsFavoriteItem">Is favorite item</string>
+    <string name="IsOnShoppingList">Is on shopping list</string>
 </resources>
