@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "959521295150",
+    "firebase_url": "https://tvaprojekt-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "tvaprojekt",
+    "storage_bucket": "tvaprojekt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959521295150:android:c73029bdcc6677cdf688bf",
+        "android_client_info": {
+          "package_name": "com.example.tzva_naloga_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959521295150-aqe7mgeei3vpdd84dus60rp337mm5vh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBipDv1pNlwOD5VEhw9DarASQk_nt5oiW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959521295150-aqe7mgeei3vpdd84dus60rp337mm5vh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -13,6 +13,11 @@
         android:theme="@style/Theme.TZVA_naloga_1">
         <activity
             android:name=".ui.MainActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/Theme.TZVA_naloga_1.NoActionBar" />
+        <activity
+            android:name=".ui.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

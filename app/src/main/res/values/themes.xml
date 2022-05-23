@@ -14,8 +14,15 @@
         <item name="android:textColorPrimary">@color/white</item>
         <!-- Customize your theme here. -->
     </style>
-    
+
     <style name="CustomTabSytle" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">10sp</item>
     </style>
+    <style name="Theme.TZVA_naloga_1.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.TZVA_naloga_1.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.TZVA_naloga_1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
