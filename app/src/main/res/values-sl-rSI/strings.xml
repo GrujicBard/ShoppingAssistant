@@ -26,4 +26,18 @@
     <string name="isStoredCold">Je namenjeno hladnemu shranjevanju</string>
     <string name="IsFavoriteItem">Je priljubljeni izdelek</string>
     <string name="IsOnShoppingList">Je na nakupovlanem seznamu</string>
+
+    <string name="title_activity_login">Aktivnost za logiranje</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Prvi Fragment</string>
+    <string name="second_fragment_label">Drugi Fragment</string>
+    <string name="next">Naslednje</string>
+    <string name="previous">Prehdodno</string>
+
+    <string name="hello_first_fragment">Pozdravljen prvi fragment</string>
+    <string name="hello_second_fragment">Pozdravljen prvi fragment. Argumenti: %1$s</string>
+
+    <string name="successfulCreation">Uspešno si kreiral izdelek</string>
+    <string name="unSuccessfulCreation">Neuspešna kreacija izdelka!</string>
 </resources>

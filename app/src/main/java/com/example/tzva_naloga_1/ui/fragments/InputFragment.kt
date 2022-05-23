@@ -9,9 +9,9 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import com.example.tzva_naloga_1.R
 import com.example.tzva_naloga_1.database.ItemViewModel
 import com.example.tzva_naloga_1.database.ItemViewModelFactory
@@ -28,10 +28,9 @@ class InputFragment : Fragment() {
     }
 
     override fun onCreateView(
-
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+        ): View? {
 
         val view : View = inflater.inflate(R.layout.fragment_input, container, false)
         val builder : MaterialDatePicker.Builder<*> = MaterialDatePicker.Builder.datePicker()
@@ -47,6 +46,9 @@ class InputFragment : Fragment() {
         val cb_isStoredCold: CheckBox = view.findViewById(R.id.cb_isStoredCold)
         val cb_isFavoriteItem: CheckBox = view.findViewById(R.id.cb_isFavoriteItem)
         val cb_isOnShoppingList: CheckBox = view.findViewById(R.id.cb_isOnShoppingList)
+
+        val success: String = getString(R.string.successfulCreation)
+        val unSuccess: String = getString(R.string.unSuccessfulCreation)
 
         val btn_save : Button = view.findViewById(R.id.btn_save)
         val imm = requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
@@ -86,9 +88,18 @@ class InputFragment : Fragment() {
                 cb_isFavoriteItem.isChecked.toString().toBoolean(),
                 cb_isOnShoppingList.isChecked.toString().toBoolean()
             )
-            itemViewModel.insert(item)
 
-            dialog.show(parentFragmentManager, "summaryDialog")
+            if (et_EAN.text != null &&
+                et_title.text != null &&
+                et_dateOfStorage.text != null &&
+                et_description.text != null &&
+                et_price.text != null &&
+                et_quantity.text != null)
+            {
+                Toast.makeText(activity?.application, success, Toast.LENGTH_SHORT).show()
+                itemViewModel.insert(item)
+            }
+            //dialog.show(parentFragmentManager, "summaryDialog")
         }
         return view;
     }

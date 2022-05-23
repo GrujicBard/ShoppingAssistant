@@ -15,16 +15,16 @@ class SummaryDialogFragment : DialogFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+        ): View? {
 
         var rootView: View = inflater.inflate(R.layout.fragment_summary_dialog, container, false);
+        var btn_close = rootView.findViewById<View>(R.id.btn_close);
 
-        var btn_cancel = rootView.findViewById<View>(R.id.btn_close);
-
-        btn_cancel.setOnClickListener{
+        btn_close.setOnClickListener{
             dismiss();
         };
 
         return rootView;
+
     }
 }
