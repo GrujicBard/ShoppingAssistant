@@ -76,8 +76,7 @@ class InputFragment : Fragment() {
 
         btn_save.setOnClickListener{
             if(et_title.text.trim().length>0 &&
-                et_quantity.text.trim().length>0 &&
-                et_title.text.trim().length>0)
+                et_quantity.text.trim().length>0)
             {
                 val item = ItemEntity(
                     0,
