@@ -10,18 +10,22 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.example.tzva_naloga_1.R
 import com.example.tzva_naloga_1.database.ItemViewModel
+import com.example.tzva_naloga_1.database.ItemViewModelFactory
+import com.example.tzva_naloga_1.database.ItemsApplication
 import com.example.tzva_naloga_1.database.entities.ItemEntity
 import com.example.tzva_naloga_1.ui.dialog_fragments.SummaryDialogFragment
 import com.google.android.material.datepicker.MaterialDatePicker
 
-
 @Suppress("DEPRECATION")
 class InputFragment : Fragment() {
 
-    lateinit var viewModel: ItemViewModel
+    private val itemViewModel: ItemViewModel by viewModels {
+        ItemViewModelFactory((activity?.application as ItemsApplication).repository)
+    }
 
     override fun onCreateView(
 
@@ -46,7 +50,6 @@ class InputFragment : Fragment() {
 
         val btn_save : Button = view.findViewById(R.id.btn_save)
         val imm = requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        val database_fragment = DatabaseFragment()
 
         builder.setTitleText(resources.getString(R.string.calendar))
         et_dateOfStorage.setOnClickListener{
@@ -83,16 +86,10 @@ class InputFragment : Fragment() {
                 cb_isFavoriteItem.isChecked.toString().toBoolean(),
                 cb_isOnShoppingList.isChecked.toString().toBoolean()
             )
-            viewModel = ViewModelProvider(this)[ItemViewModel::class.java]
-            viewModel.insertItem(item)
-
-            if(database_fragment.recycviewAdapaterIsInit()){ //Doesn't work to refresh recyclerview after creating item!
-                database_fragment.recyclerViewAdapter.notifyDataSetChanged(); // FIX THIS
-            }
+            itemViewModel.insert(item)
 
             dialog.show(parentFragmentManager, "summaryDialog")
-        };
-
+        }
         return view;
     }
 }
