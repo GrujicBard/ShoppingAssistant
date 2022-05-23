@@ -15,21 +15,22 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tzva_naloga_1.R
 import com.example.tzva_naloga_1.adapters.RecyclerViewAdapter
-import com.example.tzva_naloga_1.database.UserViewModel
-import com.example.tzva_naloga_1.database.entities.UserEntity
+import com.example.tzva_naloga_1.database.ItemViewModel
+import com.example.tzva_naloga_1.database.entities.ItemEntity
 import androidx.recyclerview.widget.StaggeredGridLayoutManager.VERTICAL
 
 class DatabaseFragment : Fragment(), RecyclerViewAdapter.RowClickListener  {
 
-    lateinit var viewModel: UserViewModel;
+    lateinit var viewModel: ItemViewModel;
     lateinit var recyclerViewAdapter: RecyclerViewAdapter;
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_database, container, false);
 
+        val view = inflater.inflate(R.layout.fragment_database, container, false);
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview);
 
         recyclerView.apply {
@@ -38,8 +39,8 @@ class DatabaseFragment : Fragment(), RecyclerViewAdapter.RowClickListener  {
             adapter = recyclerViewAdapter;
         }
 
-        viewModel = ViewModelProvider(this)[UserViewModel::class.java]
-        viewModel.getAllUsersObservers().observe(viewLifecycleOwner, Observer {
+        viewModel = ViewModelProvider(this)[ItemViewModel::class.java]
+        viewModel.getAllItemsObservers().observe(viewLifecycleOwner, Observer {
             recyclerViewAdapter.setListData(ArrayList(it))
             recyclerViewAdapter.notifyDataSetChanged()
         })
@@ -54,12 +55,11 @@ class DatabaseFragment : Fragment(), RecyclerViewAdapter.RowClickListener  {
         return false;
     }
 
-    override fun onDeleteUserClickListener(user: UserEntity) {
-        viewModel.deleteUser(user)
+    override fun onDeleteItemClickListener(item: ItemEntity) {
+        viewModel.deleteItem(item)
     }
 
-    override fun onItemClickListener(user: UserEntity) {
+    override fun onItemClickListener(item: ItemEntity) {
         TODO("Not yet implemented")
     }
-
 }

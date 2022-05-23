@@ -9,8 +9,6 @@ import com.example.tzva_naloga_1.R
 
 class SummaryDialogFragment : DialogFragment() {
 
-
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
