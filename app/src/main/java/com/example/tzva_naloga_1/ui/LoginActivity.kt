@@ -22,8 +22,6 @@ import com.example.tzva_naloga_1.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var user: FirebaseAuth
-    private lateinit var signInRequest: BeginSignInRequest
-    lateinit var signInClient: GoogleSignInClient
     private lateinit var binding: com.example.tzva_naloga_1.databinding.ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,14 +34,10 @@ class LoginActivity : AppCompatActivity() {
         binding.registerBtn.setOnClickListener{
             registerUser()
         }
-
-
     }
     private fun registerUser(){
-        val email= binding.email.text.toString().trim()
-        val password=binding.pwd.text.toString().trim()
-
-        print(email)
+        val email= binding.editTextTextEmailAddress.text.toString().trim()
+        val password=binding.editTextTextPassword.text.toString().trim()
 
         if(email.isNotEmpty() && password.isNotEmpty()){
             user.createUserWithEmailAndPassword(email,password).addOnCompleteListener(LoginActivity()){
@@ -53,14 +47,21 @@ class LoginActivity : AppCompatActivity() {
                     startActivity(Intent(this, MainActivity::class.java))
                     finish()
                 }else{
+                    user.signInWithEmailAndPassword(email,password)
+                        .addOnCompleteListener{mTask->
+                            if (mTask.isSuccessful){
+                                startActivity(Intent(this, MainActivity::class.java))
+                                Toast.makeText(this, "Welcome user " + user.currentUser?.email, Toast.LENGTH_SHORT).show()
+
+                            }else{
+                                Toast.makeText(this, mTask.exception!!.message, Toast.LENGTH_SHORT).show()
+                            }
+                        }
                     Toast.makeText(this, task.exception!!.message, Toast.LENGTH_SHORT).show()
                 }
             }
         }else{
             Toast.makeText(this, "Email or password can not be empty", Toast.LENGTH_SHORT).show()
-
         }
     }
-
-
 }
