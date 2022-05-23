@@ -37,5 +37,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="successfulCreation">Successful creation!</string>
-    <string name="unSuccessfulCreation">UnSuccessful creation!</string>
+    <string name="unSuccessfulCreation">Unsuccessful creation! Check input values</string>
 </resources>

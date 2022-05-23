@@ -75,31 +75,28 @@ class InputFragment : Fragment() {
         }
 
         btn_save.setOnClickListener{
-            val dialog = SummaryDialogFragment()
-            val item = ItemEntity(
-                0,
-                et_EAN.text.toString(),
-                et_title.text.toString(),
-                et_dateOfStorage.text.toString(),
-                et_description.text.toString(),
-                et_price.text.toString().toDouble(),
-                et_quantity.text.toString().toInt(),
-                cb_isStoredCold.isChecked.toString().toBoolean(),
-                cb_isFavoriteItem.isChecked.toString().toBoolean(),
-                cb_isOnShoppingList.isChecked.toString().toBoolean()
-            )
-
-            if (et_EAN.text != null &&
-                et_title.text != null &&
-                et_dateOfStorage.text != null &&
-                et_description.text != null &&
-                et_price.text != null &&
-                et_quantity.text != null)
+            if(et_title.text.trim().length>0 &&
+                et_quantity.text.trim().length>0 &&
+                et_title.text.trim().length>0)
             {
+                val item = ItemEntity(
+                    0,
+                    et_EAN.text.toString(),
+                    et_title.text.toString(),
+                    et_dateOfStorage.text.toString(),
+                    et_description.text.toString(),
+                    et_price.text.toString().toDouble(),
+                    et_quantity.text.toString().toInt(),
+                    cb_isStoredCold.isChecked.toString().toBoolean(),
+                    cb_isFavoriteItem.isChecked.toString().toBoolean(),
+                    cb_isOnShoppingList.isChecked.toString().toBoolean()
+                )
                 Toast.makeText(activity?.application, success, Toast.LENGTH_SHORT).show()
                 itemViewModel.insert(item)
             }
-            //dialog.show(parentFragmentManager, "summaryDialog")
+            else{
+                Toast.makeText(activity?.application, unSuccess, Toast.LENGTH_SHORT).show()
+            }
         }
         return view;
     }

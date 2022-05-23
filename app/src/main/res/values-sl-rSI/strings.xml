@@ -39,5 +39,5 @@
     <string name="hello_second_fragment">Pozdravljen prvi fragment. Argumenti: %1$s</string>
 
     <string name="successfulCreation">Uspešno si kreiral izdelek</string>
-    <string name="unSuccessfulCreation">Neuspešna kreacija izdelka!</string>
+    <string name="unSuccessfulCreation">Neuspešna kreacija izdelka! Preveri vhodne vrednosti</string>
 </resources>
