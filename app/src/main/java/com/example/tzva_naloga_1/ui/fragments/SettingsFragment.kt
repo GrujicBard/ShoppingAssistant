@@ -1,5 +1,4 @@
 package com.example.tzva_naloga_1.ui.fragments
-
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.AlertDialog
@@ -12,15 +11,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.viewModels
 import com.example.tzva_naloga_1.ui.MainActivity
 import com.example.tzva_naloga_1.R
-import com.example.tzva_naloga_1.database.ItemViewModel
+import com.example.tzva_naloga_1.database.*
 import java.util.*
 
 class SettingsFragment : Fragment() {
 
-    lateinit var viewModel: ItemViewModel;
+    private val itemViewModel: ItemViewModel by viewModels {
+        ItemViewModelFactory((activity?.application as ItemsApplication).repository)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,15 +31,16 @@ class SettingsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_settings, container, false);
         val btn_lang = view.findViewById<Button>(R.id.btn_lang);
         val btn_nuke = view.findViewById<Button>(R.id.btn_nuke);
-        viewModel = ViewModelProvider(this)[ItemViewModel::class.java]
 
         btn_lang.setOnClickListener{
+
             showChangeLang();
         };
 
         btn_nuke.setOnClickListener {
-            viewModel.deleteAllItems(); //TO DO: Are you sure? Y/N
+            itemViewModel.deleteAll(); //TO DO: Are you sure? Y/N
         };
+
 
         return view;
     }

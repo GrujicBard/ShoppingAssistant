@@ -2,21 +2,22 @@ package com.example.tzva_naloga_1.database.dao
 
 import androidx.room.*
 import com.example.tzva_naloga_1.database.entities.ItemEntity
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ItemDao {
 
     @Query("SELECT * FROM item ORDER BY uid DESC")
-    fun getAllItems(): List<ItemEntity>?
+    fun getAllItems(): Flow<List<ItemEntity>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insertItem(item: ItemEntity?)
+    suspend fun insertItem(item: ItemEntity?)
 
     @Delete
-    fun deleteItem(item: ItemEntity?)
+    suspend fun deleteItem(item: ItemEntity?)
 
     @Query("DELETE FROM item")
-    fun deleteAllItems()
+    suspend fun deleteAllItems()
 
     @Update
     fun updateItem(item: ItemEntity?)

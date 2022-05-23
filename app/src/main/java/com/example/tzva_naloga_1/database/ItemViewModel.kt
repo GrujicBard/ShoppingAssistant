@@ -3,46 +3,30 @@ package com.example.tzva_naloga_1.database
 import android.app.Application
 import androidx.lifecycle.*
 import com.example.tzva_naloga_1.database.entities.ItemEntity
+import kotlinx.coroutines.launch
 
-class ItemViewModel(app: Application) : AndroidViewModel(app) {
+class ItemViewModel(private val repository: ItemRepository) : ViewModel(){
 
-    private var allItems : MutableLiveData<List<ItemEntity>> = MutableLiveData();
+    val allItems: LiveData<List<ItemEntity>> = repository.allItems.asLiveData()
 
-    init{
-        allItems = MutableLiveData()
-        getAllItems()
+    /**
+     * Launching a new coroutine to insert the data in a non-blocking way
+     */
+    fun insert(item: ItemEntity) = viewModelScope.launch {
+        repository.insert(item)
     }
 
-    fun getAllItemsObservers(): MutableLiveData<List<ItemEntity>> {
-        return allItems
+    fun deleteAll() = viewModelScope.launch {
+        repository.deleteAll()
     }
+}
 
-    fun getAllItems() {
-        val itemDao = ItemRoomDatabase.getDatabase(getApplication())?.itemDao()
-        val list = itemDao?.getAllItems()
-        allItems.postValue(list!!)
-    }
-
-    fun insertItem(entity: ItemEntity){
-        val itemDao = ItemRoomDatabase.getDatabase(getApplication())?.itemDao()
-        itemDao?.insertItem(entity)
-        getAllItems()
-    }
-
-    fun updateItem(entity: ItemEntity){
-        val itemDao = ItemRoomDatabase.getDatabase(getApplication())?.itemDao()
-        itemDao?.updateItem(entity)
-        getAllItems()
-    }
-
-    fun deleteItem(entity: ItemEntity){
-        val itemDao = ItemRoomDatabase.getDatabase(getApplication())?.itemDao()
-        itemDao?.deleteItem(entity)
-        getAllItems()
-    }
-
-    fun deleteAllItems(){
-        val itemDao = ItemRoomDatabase.getDatabase(getApplication())?.itemDao()
-        itemDao?.deleteAllItems()
+class ItemViewModelFactory(private val repository: ItemRepository) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(ItemViewModel::class.java)) {
+            @Suppress("UNCHECKED_CAST")
+            return ItemViewModel(repository) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel class")
     }
 }
