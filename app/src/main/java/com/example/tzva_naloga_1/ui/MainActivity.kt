@@ -24,13 +24,21 @@ class MainActivity : AppCompatActivity() {
             when(position){
                 0->{
                     tab.icon = ResourcesCompat.getDrawable(resources,
-                        R.drawable.ic_baseline_home_24, null );
+                        R.drawable.ic_baseline_storage_24, null );
                 }
                 1->{
                     tab.icon = ResourcesCompat.getDrawable(resources,
-                        R.drawable.ic_baseline_storage_24, null );
+                        R.drawable.ic_baseline_add_24, null );
                 }
                 2->{
+                    tab.icon = ResourcesCompat.getDrawable(resources,
+                        R.drawable.ic_baseline_favorite_24, null );
+                }
+                3->{
+                    tab.icon = ResourcesCompat.getDrawable(resources,
+                        R.drawable.ic_baseline_shopping_cart_24, null );
+                }
+                4->{
                     tab.icon = ResourcesCompat.getDrawable(resources,
                         R.drawable.ic_baseline_settings_24, null );
                 }
