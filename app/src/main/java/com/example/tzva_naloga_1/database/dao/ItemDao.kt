@@ -19,5 +19,5 @@ interface ItemDao {
     fun deleteAllItems()
 
     @Update
-    fun updateUser(item: ItemEntity?)
+    fun updateItem(item: ItemEntity?)
 }

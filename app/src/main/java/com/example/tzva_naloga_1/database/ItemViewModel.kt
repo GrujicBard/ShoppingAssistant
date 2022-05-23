@@ -31,7 +31,7 @@ class ItemViewModel(app: Application) : AndroidViewModel(app) {
 
     fun updateItem(entity: ItemEntity){
         val itemDao = ItemRoomDatabase.getDatabase(getApplication())?.itemDao()
-        itemDao?.updateUser(entity)
+        itemDao?.updateItem(entity)
         getAllItems()
     }
 

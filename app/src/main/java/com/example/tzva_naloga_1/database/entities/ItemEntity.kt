@@ -5,6 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "item")
 data class ItemEntity (
+
     @PrimaryKey(autoGenerate = true)
     val uid: Int = 0,
     val EAN: String,

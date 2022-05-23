@@ -35,9 +35,9 @@ class RecyclerViewAdapter(private val listener: RowClickListener): RecyclerView.
     class ItemViewHolder(view: View, private val listener: RowClickListener): RecyclerView.ViewHolder(view) {
         val txtName: TextView = view.findViewById(R.id.tv_rv_item);
 
-        //FYI: Trenutno sem izpisal vsa polja -> v prihodnje lahko izpišemo samo določena izmed teh
         fun bind(data: ItemEntity) {
-            val fullText = "EAN: " + data.EAN +"\nTitle: "+ data.title +"\nIsFavoriteItem: "+ data.IsFavoriteItem + "\nIsOnShoppingList: "+ data.IsOnShoppingList +"\nDateOfStorage: "+ data.dateOfStorage + "\nDescription: " + data.description + "\nIsStoredCold: " + data.isStoredCold + "\nPrice: "+ data.price + "\nQuantity: "+ data.quantity + "\nUid: " + data.uid
+            //val fullText = "EAN: " + data.EAN +"\nTitle: "+ data.title +"\nIsFavoriteItem: "+ data.IsFavoriteItem + "\nIsOnShoppingList: "+ data.IsOnShoppingList +"\nDateOfStorage: "+ data.dateOfStorage + "\nDescription: " + data.description + "\nIsStoredCold: " + data.isStoredCold + "\nPrice: "+ data.price + "\nQuantity: "+ data.quantity + "\nUid: " + data.uid
+            val fullText = "Title: " + data.title + "  Quantity: "+ data.quantity
             txtName.text = fullText;
         }
     }
