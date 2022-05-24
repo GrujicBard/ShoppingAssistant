@@ -8,10 +8,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+
         android:orientation="vertical">
 
 
@@ -39,11 +40,11 @@
             android:layout_marginTop="5dp">
 
             <EditText
-                android:id="@+id/et_title"
+                android:id="@+id/et_item_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
-                android:hint="@string/title"
+                android:hint="@string/item_name"
                 android:inputType="text"
                 android:singleLine="true"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -51,16 +52,15 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/li_description"
+            android:id="@+id/il_price"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/et_description"
+                android:id="@+id/et_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/description"
+                android:hint="@string/price"
                 android:inputType="text"
                 android:singleLine="true"
                 tools:ignore="SpeakableTextPresentCheck"
@@ -68,16 +68,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_price"
+            android:id="@+id/il_stock"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="5dp">
 
             <EditText
-                android:id="@+id/et_price"
+                android:id="@+id/et_stock"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/price"
+                android:hint="@string/stock"
                 android:inputType="text"
                 android:singleLine="true"
                 tools:ignore="SpeakableTextPresentCheck"
@@ -102,28 +102,66 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/li_dateOfStorage"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop">
+
+            <AutoCompleteTextView
+                android:id="@+id/dd_shop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/storage">
+
+            <AutoCompleteTextView
+                android:id="@+id/dd_storage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/li_expirationDate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="5dp">
 
             <EditText
-                android:id="@+id/et_dateOfStorage"
+                android:id="@+id/et_expirationDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/dateOfStorage"
+                android:autofillHints=""
+                android:hint="@string/expirationDate"
                 android:inputType="date|datetime|text"
                 android:singleLine="true"
-                tools:ignore="SpeakableTextPresentCheck"
-                android:autofillHints="" />
+                tools:ignore="SpeakableTextPresentCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
-        <CheckBox
-            android:id="@+id/cb_isStoredCold"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/li_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/isStoredCold" />
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:autofillHints=""
+                android:hint="@string/description"
+                android:inputType="text|textMultiLine"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
             android:id="@+id/cb_isFavoriteItem"
@@ -142,7 +180,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginLeft="70dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
             android:layout_marginRight="70dp"
             android:layout_weight="1"
             android:text="@string/btn_save"
