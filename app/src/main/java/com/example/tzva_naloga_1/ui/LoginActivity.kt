@@ -68,14 +68,11 @@ class LoginActivity : AppCompatActivity() {
         user.signInWithCredential(credential)
             .addOnSuccessListener { authResult->
                 Log.d(TAG, "Logged in ")
-
                 val firebaseUser=user.currentUser
-                val uid=firebaseUser!!.uid
                 val email=firebaseUser!!.uid
 
                 if(authResult.additionalUserInfo!!.isNewUser){
                     Log.d(TAG, "User is new account created - email: " +email)
-
                 }else{
                     Log.d(TAG, "Existing user - email: " +email)
                 }
@@ -85,9 +82,6 @@ class LoginActivity : AppCompatActivity() {
                 Log.d(TAG, "Login failed " +e.message)
             }
     }
-
-
-
 
     private fun registerUser(){
         val email= binding.editTextTextEmailAddress.text.toString().trim()

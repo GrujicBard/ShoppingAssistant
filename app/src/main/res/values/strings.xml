@@ -15,6 +15,7 @@
     <string name="btn_nuke">Drop database</string>
     <string name="calendar">Pick date</string>
 
+
     <!-- Items -->
     <string name="EAN">EAN</string>
     <string name="title">Title</string>
@@ -38,4 +39,14 @@
 
     <string name="successfulCreation">Successful creation!</string>
     <string name="unSuccessfulCreation">Unsuccessful creation! Check input values</string>
+
+    <!-- Login activity -->
+    <string name="login">Login</string>
+    <string name="forgotPassword">forgot password?</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="signIn">SIGN IN</string>
+    <string name="signUp"> Sign up</string>
+    <string name="newUser">New user?</string>
+
 </resources>
