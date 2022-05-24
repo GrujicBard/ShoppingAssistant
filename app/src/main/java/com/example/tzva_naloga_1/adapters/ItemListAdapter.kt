@@ -1,5 +1,6 @@
 package com.example.tzva_naloga_1.adapters
 
+import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,9 +9,12 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tzva_naloga_1.R
+import com.example.tzva_naloga_1.database.ItemViewModel
 import com.example.tzva_naloga_1.database.entities.ItemEntity
 
+
 class ItemListAdapter : ListAdapter<ItemEntity, ItemListAdapter.ItemViewHolder>(ItemsComparator()) {
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         return ItemViewHolder.create(parent)

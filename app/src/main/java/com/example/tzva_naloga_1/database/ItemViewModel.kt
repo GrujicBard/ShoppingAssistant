@@ -1,6 +1,5 @@
 package com.example.tzva_naloga_1.database
 
-import android.app.Application
 import androidx.lifecycle.*
 import com.example.tzva_naloga_1.database.entities.ItemEntity
 import kotlinx.coroutines.launch
@@ -12,13 +11,22 @@ class ItemViewModel(private val repository: ItemRepository) : ViewModel(){
     /**
      * Launching a new coroutine to insert the data in a non-blocking way
      */
-    fun insert(item: ItemEntity) = viewModelScope.launch {
-        repository.insert(item)
+
+
+
+    fun insertItem(item: ItemEntity) = viewModelScope.launch {
+        repository.insertItem(item)
     }
 
-    fun deleteAll() = viewModelScope.launch {
-        repository.deleteAll()
+    fun deleteAllItems() = viewModelScope.launch {
+        repository.deleteAllItems()
     }
+
+    fun deleteItem(item: ItemEntity) = viewModelScope.launch {
+        repository.deleteAllItems(item)
+    }
+
+
 }
 
 class ItemViewModelFactory(private val repository: ItemRepository) : ViewModelProvider.Factory {

@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        title = resources.getString(R.string.header_1);
 
         val tabLayout : TabLayout = findViewById(R.id.tabLayout);
         val viewPager2 : ViewPager2 = findViewById(R.id.viewPager);

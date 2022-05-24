@@ -2,14 +2,12 @@ package com.example.tzva_naloga_1.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.tzva_naloga_1.R
@@ -17,8 +15,11 @@ import com.example.tzva_naloga_1.database.ItemViewModel
 import com.example.tzva_naloga_1.database.ItemViewModelFactory
 import com.example.tzva_naloga_1.database.ItemsApplication
 import com.example.tzva_naloga_1.database.entities.ItemEntity
+import com.example.tzva_naloga_1.database.entities.Shop
+import com.example.tzva_naloga_1.database.entities.Storage
 import com.example.tzva_naloga_1.ui.dialog_fragments.SummaryDialogFragment
 import com.google.android.material.datepicker.MaterialDatePicker
+
 
 @Suppress("DEPRECATION")
 class InputFragment : Fragment() {
@@ -38,14 +39,17 @@ class InputFragment : Fragment() {
 
         //Item
         val et_EAN: EditText = view.findViewById(R.id.et_EAN)
-        val et_title: EditText = view.findViewById(R.id.et_title)
+        val et_item_name: EditText = view.findViewById(R.id.et_item_name)
         val et_description: EditText = view.findViewById(R.id.et_description)
+        val et_expirationDate: EditText = view.findViewById(R.id.et_expirationDate)
         val et_price: EditText = view.findViewById(R.id.et_price)
+        val et_stock: EditText = view.findViewById(R.id.et_stock)
         val et_quantity: EditText = view.findViewById(R.id.et_quantity)
-        val et_dateOfStorage: EditText = view.findViewById(R.id.et_dateOfStorage)
-        val cb_isStoredCold: CheckBox = view.findViewById(R.id.cb_isStoredCold)
         val cb_isFavoriteItem: CheckBox = view.findViewById(R.id.cb_isFavoriteItem)
         val cb_isOnShoppingList: CheckBox = view.findViewById(R.id.cb_isOnShoppingList)
+        val dd_storage: AutoCompleteTextView = view.findViewById(R.id.dd_storage)
+        val dd_shop: AutoCompleteTextView = view.findViewById(R.id.dd_shop)
+
 
         val success: String = getString(R.string.successfulCreation)
         val unSuccess: String = getString(R.string.unSuccessfulCreation)
@@ -53,16 +57,19 @@ class InputFragment : Fragment() {
         val btn_save : Button = view.findViewById(R.id.btn_save)
         val imm = requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
 
+        dd_storage.setAdapter(ArrayAdapter(requireContext(), R.layout.dropdown_item, Storage.values()))
+        dd_shop.setAdapter(ArrayAdapter(requireContext(), R.layout.dropdown_item, Shop.values()))
+
         builder.setTitleText(resources.getString(R.string.calendar))
-        et_dateOfStorage.setOnClickListener{
+        et_expirationDate.setOnClickListener{
             picker.show(parentFragmentManager, picker.toString())
-            imm.hideSoftInputFromWindow(et_dateOfStorage.windowToken, 0)
+            imm.hideSoftInputFromWindow(et_expirationDate.windowToken, 0)
         }
 
-        et_dateOfStorage.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
+        et_expirationDate.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 picker.show(parentFragmentManager, picker.toString())
-                imm.hideSoftInputFromWindow(et_dateOfStorage.windowToken, 0)
+                imm.hideSoftInputFromWindow(et_expirationDate.windowToken, 0)
             } else {
                 imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,
                     InputMethodManager.HIDE_IMPLICIT_ONLY)
@@ -70,32 +77,39 @@ class InputFragment : Fragment() {
         }
 
         picker.addOnPositiveButtonClickListener {
-            et_dateOfStorage.setText(picker.headerText)
-            cb_isStoredCold.requestFocus()
+            et_expirationDate.setText(picker.headerText)
+            cb_isFavoriteItem.requestFocus()
         }
 
         btn_save.setOnClickListener{
-            if(et_title.text.trim().length>0 &&
-                et_quantity.text.trim().length>0)
+            val dialog = SummaryDialogFragment()
+            val item = ItemEntity(
+                0,
+                et_EAN.text.toString(),
+                et_item_name.text.toString(),
+                et_price.text.toString().toDouble(),
+                et_quantity.text.toString().toInt(),
+                et_stock.text.toString().toInt(),
+                dd_shop.text.toString(),
+                dd_storage.text.toString(),
+                et_expirationDate.text.toString(),
+                cb_isFavoriteItem.isChecked.toString().toBoolean(),
+                cb_isOnShoppingList.isChecked.toString().toBoolean(),
+                et_description.text.toString()
+            )
+
+            if (et_EAN.text != null &&
+                et_item_name.text != null &&
+                et_description.text != null &&
+                et_price.text != null &&
+                et_quantity.text != null)
             {
-                val item = ItemEntity(
-                    0,
-                    et_EAN.text.toString(),
-                    et_title.text.toString(),
-                    et_dateOfStorage.text.toString(),
-                    et_description.text.toString(),
-                    et_price.text.toString().toDouble(),
-                    et_quantity.text.toString().toInt(),
-                    cb_isStoredCold.isChecked.toString().toBoolean(),
-                    cb_isFavoriteItem.isChecked.toString().toBoolean(),
-                    cb_isOnShoppingList.isChecked.toString().toBoolean()
-                )
-                Toast.makeText(activity?.application, success, Toast.LENGTH_SHORT).show()
-                itemViewModel.insert(item)
+                itemViewModel.insertItem(item)
+                val toast = Toast.makeText(activity?.application, success, Toast.LENGTH_SHORT)
+                toast.setGravity(Gravity.BOTTOM,0, 300);
+                toast.show()
             }
-            else{
-                Toast.makeText(activity?.application, unSuccess, Toast.LENGTH_SHORT).show()
-            }
+            //dialog.show(parentFragmentManager, "summaryDialog")
         }
         return view;
     }

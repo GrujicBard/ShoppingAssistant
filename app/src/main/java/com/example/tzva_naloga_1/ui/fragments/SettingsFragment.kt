@@ -38,7 +38,7 @@ class SettingsFragment : Fragment() {
         };
 
         btn_nuke.setOnClickListener {
-            itemViewModel.deleteAll(); //TO DO: Are you sure? Y/N
+            itemViewModel.deleteAllItems(); //TO DO: Are you sure? Y/N
         };
 
 
