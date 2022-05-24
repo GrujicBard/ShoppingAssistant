@@ -1,7 +1,9 @@
 package com.example.tzva_naloga_1.ui.fragments
 
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,11 +19,21 @@ import com.example.tzva_naloga_1.database.ItemViewModel
 import com.example.tzva_naloga_1.database.ItemViewModelFactory
 import com.example.tzva_naloga_1.database.ItemsApplication
 import com.example.tzva_naloga_1.database.entities.ItemEntity
-import com.example.tzva_naloga_1.ui.dialog_fragments.SummaryDialogFragment
 import com.google.android.material.datepicker.MaterialDatePicker
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.database.ktx.getValue
+import com.google.firebase.ktx.Firebase
+import org.json.JSONArray
+import org.json.JSONObject
 
 @Suppress("DEPRECATION")
 class InputFragment : Fragment() {
+
+    val database = Firebase.database
+    val reference = database.getReference("")
 
     private val itemViewModel: ItemViewModel by viewModels {
         ItemViewModelFactory((activity?.application as ItemsApplication).repository)
@@ -97,6 +109,32 @@ class InputFragment : Fragment() {
                 Toast.makeText(activity?.application, unSuccess, Toast.LENGTH_SHORT).show()
             }
         }
+
+        //pridobivanje podatkov iz firebasa
+        getData()
+
         return view;
+    }
+
+    private fun getData(){
+        val market="Tuš"
+        val postListener = object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                for (snapshot in dataSnapshot.children) {
+                    for(snap in snapshot.children){
+                        if(snap.key=="name" && snap.value==market){
+                            //to-do
+                        }
+                    }
+                }
+                Log.w(TAG, "loadPost:Sucess")
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                // Getting Post failed, log a message
+                Log.w(TAG, "loadPost:onCancelled", databaseError.toException())
+            }
+        }
+        reference.addValueEventListener(postListener)
     }
 }

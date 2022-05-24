@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.LoginActivity">
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="350dp"
@@ -17,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.37">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +30,6 @@
                 android:layout_marginRight="20dp"
                 android:text="@string/login"
                 android:textSize="25sp" />
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -108,10 +105,8 @@
                 android:text="@string/signIn"
                 android:textColor="#fff"
                 android:textSize="22sp" />
-
         </RelativeLayout>
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/textView3"
@@ -135,6 +130,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.936" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
