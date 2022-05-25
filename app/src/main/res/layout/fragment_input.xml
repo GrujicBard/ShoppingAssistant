@@ -54,7 +54,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_price"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
 
             <EditText
                 android:id="@+id/et_price"
@@ -105,6 +106,20 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/category">
+
+            <AutoCompleteTextView
+                android:id="@+id/dd_cat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="@string/shop">
 
             <AutoCompleteTextView
@@ -133,18 +148,7 @@
             android:id="@+id/li_expirationDate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="5dp">
-
-            <EditText
-                android:id="@+id/et_expirationDate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:hint="@string/expirationDate"
-                android:inputType="date|datetime|text"
-                android:singleLine="true"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginTop="5dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/li_description"
@@ -155,25 +159,13 @@
             <EditText
                 android:id="@+id/et_description"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:autofillHints=""
                 android:hint="@string/description"
                 android:inputType="text|textMultiLine"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
-        <CheckBox
-            android:id="@+id/cb_isFavoriteItem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/IsFavoriteItem" />
-
-        <CheckBox
-            android:id="@+id/cb_isOnShoppingList"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/IsOnShoppingList" />
 
         <Button
             android:id="@+id/btn_save"

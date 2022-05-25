@@ -14,6 +14,7 @@ import com.example.tzva_naloga_1.R
 import com.example.tzva_naloga_1.database.ItemViewModel
 import com.example.tzva_naloga_1.database.ItemViewModelFactory
 import com.example.tzva_naloga_1.database.ItemsApplication
+import com.example.tzva_naloga_1.database.entities.ItemCategory
 import com.example.tzva_naloga_1.database.entities.ItemEntity
 import com.example.tzva_naloga_1.database.entities.Shop
 import com.example.tzva_naloga_1.database.entities.Storage
@@ -41,14 +42,14 @@ class InputFragment : Fragment() {
         val et_EAN: EditText = view.findViewById(R.id.et_EAN)
         val et_item_name: EditText = view.findViewById(R.id.et_item_name)
         val et_description: EditText = view.findViewById(R.id.et_description)
-        val et_expirationDate: EditText = view.findViewById(R.id.et_expirationDate)
         val et_price: EditText = view.findViewById(R.id.et_price)
         val et_stock: EditText = view.findViewById(R.id.et_stock)
         val et_quantity: EditText = view.findViewById(R.id.et_quantity)
-        val cb_isFavoriteItem: CheckBox = view.findViewById(R.id.cb_isFavoriteItem)
-        val cb_isOnShoppingList: CheckBox = view.findViewById(R.id.cb_isOnShoppingList)
+        //val cb_isFavoriteItem: CheckBox = view.findViewById(R.id.cb_isFavoriteItem)
+        //val cb_isOnShoppingList: CheckBox = view.findViewById(R.id.cb_isOnShoppingList)
         val dd_storage: AutoCompleteTextView = view.findViewById(R.id.dd_storage)
         val dd_shop: AutoCompleteTextView = view.findViewById(R.id.dd_shop)
+        val dd_cat: AutoCompleteTextView = view.findViewById(R.id.dd_cat)
 
 
         val success: String = getString(R.string.successfulCreation)
@@ -57,10 +58,12 @@ class InputFragment : Fragment() {
         val btn_save : Button = view.findViewById(R.id.btn_save)
         val imm = requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
 
+        dd_cat.setAdapter(ArrayAdapter(requireContext(), R.layout.dropdown_item, ItemCategory.values()))
         dd_storage.setAdapter(ArrayAdapter(requireContext(), R.layout.dropdown_item, Storage.values()))
         dd_shop.setAdapter(ArrayAdapter(requireContext(), R.layout.dropdown_item, Shop.values()))
 
-        builder.setTitleText(resources.getString(R.string.calendar))
+        //Working datepicker
+/*        builder.setTitleText(resources.getString(R.string.calendar))
         et_expirationDate.setOnClickListener{
             picker.show(parentFragmentManager, picker.toString())
             imm.hideSoftInputFromWindow(et_expirationDate.windowToken, 0)
@@ -79,10 +82,9 @@ class InputFragment : Fragment() {
         picker.addOnPositiveButtonClickListener {
             et_expirationDate.setText(picker.headerText)
             cb_isFavoriteItem.requestFocus()
-        }
+        }*/
 
         btn_save.setOnClickListener{
-            //val dialog = ItemDialogFragment()
             val item = ItemEntity(
                 0,
                 et_EAN.text.toString(),
@@ -92,10 +94,10 @@ class InputFragment : Fragment() {
                 et_stock.text.toString().toInt(),
                 dd_shop.text.toString(),
                 dd_storage.text.toString(),
-                et_expirationDate.text.toString(),
-                cb_isFavoriteItem.isChecked.toString().toBoolean(),
-                cb_isOnShoppingList.isChecked.toString().toBoolean(),
-                et_description.text.toString()
+                dd_cat.text.toString(),
+                IsFavoriteItem = false,
+                IsOnShoppingList = false,
+                description = et_description.text.toString()
             )
 
             if (et_EAN.text != null &&
@@ -109,7 +111,6 @@ class InputFragment : Fragment() {
                 toast.setGravity(Gravity.BOTTOM,0, 300);
                 toast.show()
             }
-            //dialog.show(parentFragmentManager, "summaryDialog")
         }
         return view;
     }

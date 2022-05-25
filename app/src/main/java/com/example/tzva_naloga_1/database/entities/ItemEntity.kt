@@ -1,5 +1,6 @@
 package com.example.tzva_naloga_1.database.entities
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.time.LocalDateTime
@@ -17,11 +18,10 @@ data class ItemEntity(
     var stock: Int,
     val shop: String,
     val storage: String,
-    val expirationDate: String,
+    val category: String,
     var IsFavoriteItem: Boolean,
     var IsOnShoppingList: Boolean,
-    val description: String,
-    val dateOfStorage: String? = LocalDateTime.now().toString(),
+    val description: String
 )
 
 enum class Storage{
@@ -39,9 +39,25 @@ enum class Shop{
     MERCATOR,
     SPAR,
     LIDL,
+    TUŠ,
     HOFER;
 
     override fun toString(): String {
         return name.lowercase().replaceFirstChar { it.uppercase() }
+    }
+}
+
+enum class ItemCategory{
+    MILK_EGGS_AND_DAIRY_PRODUCTS,
+    MEAT_AND_MEAT_PRODUCTS,
+    BREAD_AND_PASTRIES,
+    FROZEN_FOOD,
+    SOFT_DRINKS,
+    ALCOHOL,
+    STEWS_SOUPS_RICE_AND_SAUCES,
+    CLEANING_PRODUCTS;
+
+    override fun toString(): String {
+        return name.lowercase().replaceFirstChar { it.uppercase() }.replace("_"," ")
     }
 }

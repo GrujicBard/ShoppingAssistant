@@ -38,8 +38,9 @@ class ItemListAdapter(val onItemClickListener : OnItemClickListener) :
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = getItem(position)
+        val item_name = item.name+", "+item.quantity
         holder.apply{
-            rv_tv_name.text = item.name
+            rv_tv_name.text = item_name
             rv_tv_stock.text = itemView.resources.getString(R.string.rv_stock, item.stock.toString())
         }
     }

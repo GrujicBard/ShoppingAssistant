@@ -48,7 +48,7 @@ class ItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         tv_name_dg.text = item.name
         tv_ean_dg.text = item.EAN
         tv_shop_dg.text = item.shop
-        tv_quantity_dg.text = resources.getString(R.string.dg_quantity, item.quantity)
+        tv_quantity_dg.text = item.quantity
         tv_price_dg.text = resources.getString(R.string.currency, item.price);
         tv_stock_dg.text = item.stock.toString()
         tv_description_dg.text = item.description

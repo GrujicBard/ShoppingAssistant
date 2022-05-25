@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:layout_marginBottom="5dp"
+    android:layout_marginBottom="1dp"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
     android:background="@color/white"
@@ -20,7 +20,7 @@
             style="@style/rv_item_tv"
             android:id="@+id/rv_tv_name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             tools:text="Item_name" />
     </LinearLayout>
 
@@ -33,7 +33,7 @@
             style="@style/rv_item_tv"
             android:id="@+id/rv_tv_stock"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="end"
             android:textColor="#989898"
             tools:text="Stock" />
@@ -49,8 +49,6 @@
             android:id="@+id/check_box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
             android:src="@drawable/ic_baseline_check_box_24"
             android:visibility="gone" />
     </LinearLayout>

@@ -17,17 +17,15 @@
     <string name="stock">Stock</string>
     <string name="price">Price</string>
     <string name="quantity">Quantity</string>
-    <string name="IsFavoriteItem">Is favorite item</string>
-    <string name="IsOnShoppingList">Is on shopping list</string>
     <string name="storage">Storage</string>
     <string name="shop">Shop</string>
     <string name="description">Description</string>
+    <string name="category">Item category</string>
 
     <!-- Item Recyclerview -->
     <string name="rv_stock" translatable="false">x%s</string>
 
     <!-- Item Dialog Fragment -->
-    <string name="dg_quantity">Quantity: %s</string>
     <string name="currency">%.2f€</string>
     <string name="dg_stock">Stock:</string>
     <string name="dg_description"><u>Description:</u></string>

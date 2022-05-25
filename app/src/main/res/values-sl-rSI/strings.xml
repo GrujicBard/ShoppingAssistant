@@ -20,11 +20,9 @@
     <string name="description">Opis</string>
     <string name="price">Cena</string>
     <string name="quantity">Količina</string>
-    <string name="IsFavoriteItem">Je priljubljeni izdelek</string>
-    <string name="IsOnShoppingList">Je na nakupovlanem seznamu</string>
+    <string name="category">Kategorija izdelka</string>
 
     <!-- Item Dialog Fragment -->
-    <string name="dg_quantity">Quantity: %s</string>
     <string name="currency">%.2f€</string>
     <string name="dg_stock">Zaloga:</string>
     <string name="dg_description"><u>Opis:</u></string>
