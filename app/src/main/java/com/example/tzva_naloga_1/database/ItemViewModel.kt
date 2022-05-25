@@ -12,10 +12,12 @@ class ItemViewModel(private val repository: ItemRepository) : ViewModel(){
      * Launching a new coroutine to insert the data in a non-blocking way
      */
 
-
-
     fun insertItem(item: ItemEntity) = viewModelScope.launch {
         repository.insertItem(item)
+    }
+
+    fun updateItem(item: ItemEntity) = viewModelScope.launch {
+        repository.updateItem(item)
     }
 
     fun deleteAllItems() = viewModelScope.launch {
@@ -25,7 +27,6 @@ class ItemViewModel(private val repository: ItemRepository) : ViewModel(){
     fun deleteItem(item: ItemEntity) = viewModelScope.launch {
         repository.deleteAllItems(item)
     }
-
 
 }
 

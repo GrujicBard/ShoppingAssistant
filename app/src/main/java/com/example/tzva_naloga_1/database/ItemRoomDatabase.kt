@@ -10,7 +10,7 @@ import com.example.tzva_naloga_1.database.entities.ItemEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
-@Database(entities = [ItemEntity::class], version = 5, exportSchema = false)
+@Database(entities = [ItemEntity::class], version = 7, exportSchema = false)
 public abstract class ItemRoomDatabase: RoomDatabase() {
 
     abstract fun itemDao(): ItemDao;

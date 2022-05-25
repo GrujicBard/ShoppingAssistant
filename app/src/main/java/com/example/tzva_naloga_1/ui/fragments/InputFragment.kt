@@ -17,7 +17,7 @@ import com.example.tzva_naloga_1.database.ItemsApplication
 import com.example.tzva_naloga_1.database.entities.ItemEntity
 import com.example.tzva_naloga_1.database.entities.Shop
 import com.example.tzva_naloga_1.database.entities.Storage
-import com.example.tzva_naloga_1.ui.dialog_fragments.SummaryDialogFragment
+import com.example.tzva_naloga_1.ui.dialog_fragments.ItemDialogFragment
 import com.google.android.material.datepicker.MaterialDatePicker
 
 
@@ -82,13 +82,13 @@ class InputFragment : Fragment() {
         }
 
         btn_save.setOnClickListener{
-            val dialog = SummaryDialogFragment()
+            //val dialog = ItemDialogFragment()
             val item = ItemEntity(
                 0,
                 et_EAN.text.toString(),
                 et_item_name.text.toString(),
                 et_price.text.toString().toDouble(),
-                et_quantity.text.toString().toInt(),
+                et_quantity.text.toString(),
                 et_stock.text.toString().toInt(),
                 dd_shop.text.toString(),
                 dd_storage.text.toString(),

@@ -9,6 +9,7 @@
     <string name="btn_nuke">Drop database</string>
     <string name="calendar">Pick date</string>
 
+
     <!-- Items -->
     <string name="EAN">EAN</string>
     <string name="item_name">Item name</string>
@@ -21,6 +22,16 @@
     <string name="storage">Storage</string>
     <string name="shop">Shop</string>
     <string name="description">Description</string>
+
+    <!-- Item Recyclerview -->
+    <string name="rv_stock" translatable="false">x%s</string>
+
+    <!-- Item Dialog Fragment -->
+    <string name="dg_quantity">Quantity: %s</string>
+    <string name="currency">%.2f€</string>
+    <string name="dg_stock">Stock:</string>
+    <string name="dg_description"><u>Description:</u></string>
+
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
