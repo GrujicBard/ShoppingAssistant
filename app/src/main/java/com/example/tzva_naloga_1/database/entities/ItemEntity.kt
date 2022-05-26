@@ -49,12 +49,13 @@ enum class Shop{
 
 enum class ItemCategory{
     MILK_EGGS_AND_DAIRY_PRODUCTS,
-    MEAT_AND_MEAT_PRODUCTS,
+    MEAT_PRODUCTS,
     BREAD_AND_PASTRIES,
     FROZEN_FOOD,
     SOFT_DRINKS,
     ALCOHOL,
-    STEWS_SOUPS_RICE_AND_SAUCES,
+    SOUPS_RICE_AND_SAUCES,
+    SALTY_SNACKS,
     CLEANING_PRODUCTS;
 
     override fun toString(): String {
