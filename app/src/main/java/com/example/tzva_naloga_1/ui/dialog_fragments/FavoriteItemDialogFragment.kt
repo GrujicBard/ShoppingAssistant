@@ -13,8 +13,8 @@ import com.example.tzva_naloga_1.database.entities.ItemEntity
 
 class FavoriteItemDialogFragment(var item: ItemEntity) : DialogFragment() {
 
-    private val itemViewModel: FavoriteItemViewModel by viewModels {
-        FavoriteItemViewModelFactory((activity?.application as ItemsApplication).repository)
+    private val itemViewModel: ItemViewModel by viewModels {
+        ItemViewModelFactory((activity?.application as ItemsApplication).repository)
     }
 
     override fun onCreateView(
