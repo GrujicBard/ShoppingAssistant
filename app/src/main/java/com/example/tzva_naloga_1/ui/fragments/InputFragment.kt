@@ -35,8 +35,8 @@ class InputFragment : Fragment() {
         ): View? {
 
         val view : View = inflater.inflate(R.layout.fragment_input, container, false)
-        val builder : MaterialDatePicker.Builder<*> = MaterialDatePicker.Builder.datePicker()
-        val picker : MaterialDatePicker<*> = builder.build()
+//        val builder : MaterialDatePicker.Builder<*> = MaterialDatePicker.Builder.datePicker()
+//        val picker : MaterialDatePicker<*> = builder.build()
 
         //Item
         val et_EAN: EditText = view.findViewById(R.id.et_EAN)
@@ -45,8 +45,8 @@ class InputFragment : Fragment() {
         val et_price: EditText = view.findViewById(R.id.et_price)
         val et_stock: EditText = view.findViewById(R.id.et_stock)
         val et_quantity: EditText = view.findViewById(R.id.et_quantity)
-        //val cb_isFavoriteItem: CheckBox = view.findViewById(R.id.cb_isFavoriteItem)
-        //val cb_isOnShoppingList: CheckBox = view.findViewById(R.id.cb_isOnShoppingList)
+//        val cb_isFavoriteItem: CheckBox = view.findViewById(R.id.cb_isFavoriteItem)
+//        val cb_isOnShoppingList: CheckBox = view.findViewById(R.id.cb_isOnShoppingList)
         val dd_storage: AutoCompleteTextView = view.findViewById(R.id.dd_storage)
         val dd_shop: AutoCompleteTextView = view.findViewById(R.id.dd_shop)
         val dd_cat: AutoCompleteTextView = view.findViewById(R.id.dd_cat)
@@ -95,8 +95,6 @@ class InputFragment : Fragment() {
                 dd_shop.text.toString(),
                 dd_storage.text.toString(),
                 dd_cat.text.toString(),
-                IsFavoriteItem = false,
-                IsOnShoppingList = false,
                 description = et_description.text.toString()
             )
 

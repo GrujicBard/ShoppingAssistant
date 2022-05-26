@@ -1,6 +1,8 @@
 package com.example.tzva_naloga_1.ui
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import androidx.viewpager2.widget.ViewPager2
@@ -10,6 +12,8 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
+    private var mainMenu: Menu? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -17,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         val tabLayout : TabLayout = findViewById(R.id.tabLayout);
         val viewPager2 : ViewPager2 = findViewById(R.id.viewPager);
         val adapter = ViewPagerAdapter(supportFragmentManager, lifecycle);
+
 
         viewPager2.adapter = adapter;
         TabLayoutMediator(tabLayout, viewPager2){tab, position ->
@@ -43,5 +48,27 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }.attach();
+    }
+
+    fun showDeleteMenu(show: Boolean){
+        mainMenu?.findItem(R.id.menu_delete)?.isVisible = show
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        mainMenu = menu
+        menuInflater.inflate(R.menu.custom_menu, mainMenu)
+        showDeleteMenu(true)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.menu_delete -> { delete()}
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun delete() {
+        TODO("Not yet implemented")
     }
 }

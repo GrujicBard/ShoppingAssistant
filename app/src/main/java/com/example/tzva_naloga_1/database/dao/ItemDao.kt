@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface ItemDao {
 
-    @Query("SELECT * FROM item ORDER BY itemId DESC")
+    @Query("SELECT * FROM item WHERE stock > 0 ORDER BY name DESC")
     fun getAllItems(): Flow<List<ItemEntity>>
 
     @Query("SELECT * FROM item WHERE IsFavoriteItem = 1 ORDER BY itemId DESC")

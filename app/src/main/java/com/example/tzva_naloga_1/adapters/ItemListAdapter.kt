@@ -1,21 +1,30 @@
 package com.example.tzva_naloga_1.adapters
 
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.util.Log
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tzva_naloga_1.R
+import com.example.tzva_naloga_1.database.ItemViewModel
+import com.example.tzva_naloga_1.database.ItemViewModelFactory
+import com.example.tzva_naloga_1.database.ItemsApplication
 import com.example.tzva_naloga_1.database.entities.ItemEntity
+import android.view.MenuInflater as menu
 
-class ItemListAdapter(val onItemClickListener: OnItemClickListener, val onItemLongClickListener: OnItemLongClickListener) :
+class ItemListAdapter(
+    private val onItemClickListener: OnItemClickListener,
+    //val onItemLongClickListener: OnItemLongClickListener,
+    private val itemViewModel: ItemViewModel,
+    //private val showMenuDelete: (Boolean) -> Unit,
+) :
     ListAdapter<ItemEntity, ItemListAdapter.ItemViewHolder>(ItemDiffCallback()) {
-
-    var isEnable = false
-    var isSelectAll = false
+    private var isEnable = false
+    private var isSelectAll = false
+    private var itemSelectedList = mutableListOf<Int>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -34,11 +43,11 @@ class ItemListAdapter(val onItemClickListener: OnItemClickListener, val onItemLo
                 val position = adapterPosition
                 onItemClickListener.onItemClick(getItem(position))
             }
-            itemView.setOnLongClickListener {
+            /* itemView.setOnLongClickListener {
                 val position = adapterPosition
                 onItemLongClickListener.onItemLongClick(getItem(position))
                 true
-            }
+            }*/
         }
     }
 
@@ -49,7 +58,19 @@ class ItemListAdapter(val onItemClickListener: OnItemClickListener, val onItemLo
             rv_tv_name.text = item_name
             rv_tv_stock.text =
                 itemView.resources.getString(R.string.rv_stock, item.stock.toString())
+            itemView.setOnLongClickListener {
+                selectItem(holder, item, position)
+                Log.d("TEST", "LONG CLIIIIIIIIIIIIIICK")
+                true
+            }
         }
+    }
+
+    private fun selectItem(holder: ItemListAdapter.ItemViewHolder, item: ItemEntity, position: Int) {
+        isEnable = true
+        itemSelectedList.add(position)
+        item.selected = true
+        //showMenuDelete(true)
     }
 
     interface OnItemClickListener {

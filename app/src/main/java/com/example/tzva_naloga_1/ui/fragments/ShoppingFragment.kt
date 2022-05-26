@@ -17,8 +17,8 @@ import com.example.tzva_naloga_1.ui.dialog_fragments.ShoppingItemDialogFragment
 
 class ShoppingFragment : Fragment(), ItemListAdapter.OnItemClickListener, ItemListAdapter.OnItemLongClickListener {
 
-    private val shoppingItemViewModel: ShoppingItemViewModel by viewModels {
-        ShoppingItemViewModelFactory((activity?.application as ItemsApplication).repository)
+    private val itemViewModel: ItemViewModel by viewModels {
+        ItemViewModelFactory((activity?.application as ItemsApplication).repository)
     }
 
     override fun onCreateView(
@@ -28,14 +28,14 @@ class ShoppingFragment : Fragment(), ItemListAdapter.OnItemClickListener, ItemLi
         val view = inflater.inflate(R.layout.fragment_database, container, false);
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview);
-        val adapter = ItemListAdapter(this, this)
+        val adapter = ItemListAdapter(this, itemViewModel)
 
 
 
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        shoppingItemViewModel.allShoppingItems.observe(viewLifecycleOwner) { items ->
+        itemViewModel.allShoppingItems.observe(viewLifecycleOwner) { items ->
             items.let { adapter.submitList(it) }
         }
 

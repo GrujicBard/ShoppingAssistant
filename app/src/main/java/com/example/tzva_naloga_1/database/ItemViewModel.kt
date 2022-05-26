@@ -7,6 +7,8 @@ import kotlinx.coroutines.launch
 class ItemViewModel(private val repository: ItemRepository) : ViewModel(){
 
     val allItems: LiveData<List<ItemEntity>> = repository.allItems.asLiveData()
+    val allFavoriteItems: LiveData<List<ItemEntity>> = repository.allFavoriteItems.asLiveData()
+    val allShoppingItems: LiveData<List<ItemEntity>> = repository.allShoppingItems.asLiveData()
 
     /**
      * Launching a new coroutine to insert the data in a non-blocking way

@@ -13,7 +13,7 @@ import com.example.tzva_naloga_1.database.entities.Storage
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
-@Database(entities = [ItemEntity::class], version = 14, exportSchema = false)
+@Database(entities = [ItemEntity::class], version = 15, exportSchema = false)
 public abstract class ItemRoomDatabase: RoomDatabase() {
 
     abstract fun itemDao(): ItemDao;
@@ -55,9 +55,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 Shop.MERCATOR.toString(),
                 Storage.FREEZER.toString(),
                 ItemCategory.MILK_EGGS_AND_DAIRY_PRODUCTS.toString(),
-                IsFavoriteItem = false,
-                IsOnShoppingList = false,
-                "UHT polnomastno mleko z 3,5% mlečne maščobe.",
+                description = "UHT polnomastno mleko z 3,5% mlečne maščobe."
             )
             itemDao.insertItem(item1)
             val item2 = ItemEntity(
@@ -70,9 +68,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 Shop.MERCATOR.toString(),
                 Storage.FREEZER.toString(),
                 ItemCategory.MILK_EGGS_AND_DAIRY_PRODUCTS.toString(),
-                IsFavoriteItem = false,
-                IsOnShoppingList = false,
-                "Jajca pred uporabo termično obdelati.",
+                description = "Jajca pred uporabo termično obdelati."
             )
             itemDao.insertItem(item2)
             val item3 = ItemEntity(
@@ -85,9 +81,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 Shop.MERCATOR.toString(),
                 Storage.CUPBOARD.toString(),
                 ItemCategory.SALTY_SNACKS.toString(),
-                IsFavoriteItem = false,
-                IsOnShoppingList = false,
-                "PŠENIČNA moka, koruzni škrob, palmina maščoba, jodirana sol 2,5 % (sol, kalijev jodat), " +
+                description = "PŠENIČNA moka, koruzni škrob, palmina maščoba, jodirana sol 2,5 % (sol, kalijev jodat), " +
                         "sladkor, emulgator: SOJIN lecitin; sredstva za vzhajanje: amonijevi karbonati; JEČMENOV slad, " +
                         "kvas, sredstvo za glaziranje: natrijev hidroksid.Lahko vsebuje sledi MLEKA, ARAŠIDOV in OREŠKOV." +
                         "Država porekla: Hrvaška.",
@@ -103,11 +97,9 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 Shop.TUŠ.toString(),
                 Storage.FREEZER.toString(),
                 ItemCategory.MEAT_PRODUCTS.toString(),
-                IsFavoriteItem = false,
-                IsOnShoppingList = false,
-                "strojno izkoščeno piščanje meso 66%, voda, piščančje kožice, krompirjev škrob, grahova moka," +
+                description = "strojno izkoščeno piščanje meso 66%, voda, piščančje kožice, krompirjev škrob, grahova moka," +
                         " vlakna citrusov, jedilna sol, začimbe, stabilizatorja: E 450, E 451; dekstroza, antioksidant: " +
-                        "E 316; konzervansa: E 250, E 262.",
+                        "E 316; konzervansa: E 250, E 262."
             )
             itemDao.insertItem(item4)
             val item5 = ItemEntity(
@@ -120,9 +112,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 Shop.MERCATOR.toString(),
                 Storage.BATHROOM.toString(),
                 ItemCategory.CLEANING_PRODUCTS.toString(),
-                IsFavoriteItem = false,
-                IsOnShoppingList = false,
-                "Slike so simbolične, ponudnik si pridržuje pravico do tipkarskih napak.",
+                description = "Slike so simbolične, ponudnik si pridržuje pravico do tipkarskih napak."
             )
             itemDao.insertItem(item5)
             val item6 = ItemEntity(
@@ -135,9 +125,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 Shop.SPAR.toString(),
                 Storage.CELLAR.toString(),
                 ItemCategory.ALCOHOL.toString(),
-                IsFavoriteItem = false,
-                IsOnShoppingList = false,
-                "Voda, ječmenov slad, hmelj, hmeljni ekstrakt, sladkor..",
+                description = "Voda, ječmenov slad, hmelj, hmeljni ekstrakt, sladkor.."
             )
             itemDao.insertItem(item6)
 

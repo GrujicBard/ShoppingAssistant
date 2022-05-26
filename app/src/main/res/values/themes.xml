@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TZVA_naloga_1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.TZVA_naloga_1" parent="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#0990C1</item>
         <item name="colorPrimaryVariant">#0990C1</item>

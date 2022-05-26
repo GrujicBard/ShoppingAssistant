@@ -14,7 +14,7 @@
             android:name=".ui.LoginActivity"
             android:exported="false"
             android:label=""
-            android:theme="@style/Theme.TZVA_naloga_1.NoActionBar" />
+            android:theme="@style/Theme.TZVA_naloga_1.AppBarOverlay" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">

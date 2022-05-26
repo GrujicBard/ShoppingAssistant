@@ -113,7 +113,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:inputType="none" />
+                android:inputType="none"
+                android:focusable='false' />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -127,7 +128,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:inputType="none" />
+                android:inputType="none"
+                android:focusable='false' />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -141,7 +143,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:inputType="none" />
+                android:inputType="none"
+                android:focusable='false' />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -163,7 +166,8 @@
                 android:autofillHints=""
                 android:hint="@string/description"
                 android:inputType="text|textMultiLine"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:gravity = "top"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
