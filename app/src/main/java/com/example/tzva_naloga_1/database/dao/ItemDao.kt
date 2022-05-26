@@ -10,6 +10,12 @@ interface ItemDao {
     @Query("SELECT * FROM item ORDER BY itemId DESC")
     fun getAllItems(): Flow<List<ItemEntity>>
 
+    @Query("SELECT * FROM item WHERE IsFavoriteItem = 1 ORDER BY itemId DESC")
+    fun getAllFavoriteItems(): Flow<List<ItemEntity>>
+
+    @Query("SELECT * FROM item WHERE IsOnShoppingList = 1 ORDER BY itemId DESC")
+    fun getAllShoppingItems(): Flow<List<ItemEntity>>
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertItem(item: ItemEntity?)
 

@@ -8,6 +8,8 @@ import kotlinx.coroutines.flow.Flow
 class ItemRepository(private val itemDao: ItemDao) {
 
     val allItems: Flow<List<ItemEntity>> = itemDao.getAllItems()
+    val allFavoriteItems: Flow<List<ItemEntity>> = itemDao.getAllFavoriteItems()
+    val allShoppingItems: Flow<List<ItemEntity>> = itemDao.getAllShoppingItems()
 
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
@@ -32,6 +34,4 @@ class ItemRepository(private val itemDao: ItemDao) {
     suspend fun deleteAllItems(item: ItemEntity) {
         itemDao.deleteItem(item)
     }
-
-
 }

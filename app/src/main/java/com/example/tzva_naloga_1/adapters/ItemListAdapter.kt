@@ -1,6 +1,5 @@
 package com.example.tzva_naloga_1.adapters
 
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tzva_naloga_1.R
 import com.example.tzva_naloga_1.database.entities.ItemEntity
-
 
 class ItemListAdapter(val onItemClickListener: OnItemClickListener, val onItemLongClickListener: OnItemLongClickListener) :
     ListAdapter<ItemEntity, ItemListAdapter.ItemViewHolder>(ItemDiffCallback()) {
