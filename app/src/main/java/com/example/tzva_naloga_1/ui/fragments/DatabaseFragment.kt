@@ -15,7 +15,7 @@ import com.example.tzva_naloga_1.database.*
 import com.example.tzva_naloga_1.database.entities.ItemEntity
 import com.example.tzva_naloga_1.ui.dialog_fragments.ItemDialogFragment
 
-class DatabaseFragment : Fragment(), ItemListAdapter.OnItemClickListener, ItemListAdapter.OnItemLongClickListener {
+class DatabaseFragment : Fragment(), ItemListAdapter.OnItemClickListener {
 
     private val itemViewModel: ItemViewModel by viewModels {
         ItemViewModelFactory((activity?.application as ItemsApplication).repository)
@@ -28,7 +28,7 @@ class DatabaseFragment : Fragment(), ItemListAdapter.OnItemClickListener, ItemLi
         val view = inflater.inflate(R.layout.fragment_database, container, false);
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview);
-        val adapter = ItemListAdapter(this, this)
+        val adapter = ItemListAdapter(this@DatabaseFragment)
 
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -43,9 +43,5 @@ class DatabaseFragment : Fragment(), ItemListAdapter.OnItemClickListener, ItemLi
     override fun onItemClick(item: ItemEntity) {
         val itemDialog = ItemDialogFragment(item)
         itemDialog.show(parentFragmentManager, "ItemDialog")
-    }
-
-    override fun onItemLongClick(item: ItemEntity) {
-        Toast.makeText(requireContext(), "Long click!", Toast.LENGTH_SHORT).show()
     }
 }
