@@ -2,13 +2,17 @@
   <library name="Gradle: com.google.android.gms:play-services-auth-api-phone:18.0.1@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6124aca2e9ac048f3c2e17fdb5b584f3/transformed/play-services-auth-api-phone-18.0.1/res" />
-      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/6124aca2e9ac048f3c2e17fdb5b584f3/transformed/play-services-auth-api-phone-18.0.1/res" />
-      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/f903dfd77d4a01842c1a876c4a51b5d5/transformed/play-services-auth-api-phone-18.0.1/res" />
-      <root url="jar://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/f903dfd77d4a01842c1a876c4a51b5d5/transformed/play-services-auth-api-phone-18.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/f903dfd77d4a01842c1a876c4a51b5d5/transformed/play-services-auth-api-phone-18.0.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/6124aca2e9ac048f3c2e17fdb5b584f3/transformed/play-services-auth-api-phone-18.0.1/res" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/f903dfd77d4a01842c1a876c4a51b5d5/transformed/play-services-auth-api-phone-18.0.1/res" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/f903dfd77d4a01842c1a876c4a51b5d5/transformed/play-services-auth-api-phone-18.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/f903dfd77d4a01842c1a876c4a51b5d5/transformed/play-services-auth-api-phone-18.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f903dfd77d4a01842c1a876c4a51b5d5/transformed/play-services-auth-api-phone-18.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f903dfd77d4a01842c1a876c4a51b5d5/transformed/play-services-auth-api-phone-18.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f903dfd77d4a01842c1a876c4a51b5d5/transformed/play-services-auth-api-phone-18.0.1/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../TZVA_naloga_1/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-api-phone/18.0.1/e50322b5fef28962e883380be05fcf2298222b00/play-services-auth-api-phone-18.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-api-phone/18.0.1/e50322b5fef28962e883380be05fcf2298222b00/play-services-auth-api-phone-18.0.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-api-phone/18.0.1/e50322b5fef28962e883380be05fcf2298222b00/play-services-auth-api-phone-18.0.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

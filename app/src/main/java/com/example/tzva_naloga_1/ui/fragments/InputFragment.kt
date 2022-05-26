@@ -18,12 +18,18 @@ import com.example.tzva_naloga_1.database.entities.ItemCategory
 import com.example.tzva_naloga_1.database.entities.ItemEntity
 import com.example.tzva_naloga_1.database.entities.Shop
 import com.example.tzva_naloga_1.database.entities.Storage
-import com.example.tzva_naloga_1.ui.dialog_fragments.ItemDialogFragment
 import com.google.android.material.datepicker.MaterialDatePicker
+import com.google.firebase.database.*
+import com.google.gson.Gson
+import org.json.JSONArray
+import org.json.JSONException
 
 
 @Suppress("DEPRECATION")
 class InputFragment : Fragment() {
+    private lateinit var database: DatabaseReference
+    var market=""
+    lateinit var productsArray:JSONArray
 
     private val itemViewModel: ItemViewModel by viewModels {
         ItemViewModelFactory((activity?.application as ItemsApplication).repository)
@@ -112,6 +118,50 @@ class InputFragment : Fragment() {
                 toast.show()
             }
         }
+        market="Tuš"
+        getDataFromFirebase()
         return view;
+    }
+
+    private fun getDataFromFirebase(){
+        var database = FirebaseDatabase.getInstance()
+        val reference = database.getReference("")
+
+        reference.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val gson = Gson()
+                val data = gson.toJson(dataSnapshot.value)
+                var arrayjson: JSONArray? = null
+                try {
+                    arrayjson = JSONArray(data)
+                } catch (e: JSONException) {
+                    e.printStackTrace()
+                }
+                val jsonArray = arrayjson
+                fetchProductFromMarket(jsonArray)
+            }
+            override fun onCancelled(databaseError: DatabaseError) {
+                print(databaseError.message)
+            }
+        })
+    }
+
+    private fun fetchProductFromMarket(jsonArray: JSONArray?){
+        if (jsonArray != null) {
+            for (i in 0 until jsonArray.length()) {
+                val element = jsonArray.getJSONObject(i)
+                if(element.get("name").equals(market)){
+                    var products=element.get("products")
+                    val gson = Gson()
+                    val json = gson.toJson(products)
+                    val jsonProducts= JSONArray(json)
+
+                    for(j in 0 until jsonProducts.length()){
+                        val el = jsonArray.getJSONObject(j)
+                        val ean= el.get("EAN")
+                    }
+                }
+            }
+        }
     }
 }

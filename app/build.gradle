@@ -71,4 +71,9 @@ dependencies {
     // Import the BoM for the Firebase platform
     implementation platform('com.google.firebase:firebase-bom:30.0.2')
     implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    //gson
+    implementation 'com.google.code.gson:gson:2.9.0'
+
 }

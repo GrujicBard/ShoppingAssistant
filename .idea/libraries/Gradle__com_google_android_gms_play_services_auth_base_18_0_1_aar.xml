@@ -2,13 +2,17 @@
   <library name="Gradle: com.google.android.gms:play-services-auth-base:18.0.1@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f0132c248febaf3f4b8b0cc3bc225d46/transformed/play-services-auth-base-18.0.1/res" />
-      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/f0132c248febaf3f4b8b0cc3bc225d46/transformed/play-services-auth-base-18.0.1/res" />
-      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/581fafa92861425cab76345d5bee8cc8/transformed/play-services-auth-base-18.0.1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/581fafa92861425cab76345d5bee8cc8/transformed/play-services-auth-base-18.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/581fafa92861425cab76345d5bee8cc8/transformed/play-services-auth-base-18.0.1/res" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/f0132c248febaf3f4b8b0cc3bc225d46/transformed/play-services-auth-base-18.0.1/res" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/581fafa92861425cab76345d5bee8cc8/transformed/play-services-auth-base-18.0.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/581fafa92861425cab76345d5bee8cc8/transformed/play-services-auth-base-18.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/581fafa92861425cab76345d5bee8cc8/transformed/play-services-auth-base-18.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/581fafa92861425cab76345d5bee8cc8/transformed/play-services-auth-base-18.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/581fafa92861425cab76345d5bee8cc8/transformed/play-services-auth-base-18.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/581fafa92861425cab76345d5bee8cc8/transformed/play-services-auth-base-18.0.1/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../TZVA_naloga_1/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-base/18.0.1/3807e6c63954c0b45972ba441e699dca1d03f2a8/play-services-auth-base-18.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-base/18.0.1/3807e6c63954c0b45972ba441e699dca1d03f2a8/play-services-auth-base-18.0.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-base/18.0.1/3807e6c63954c0b45972ba441e699dca1d03f2a8/play-services-auth-base-18.0.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>
