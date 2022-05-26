@@ -154,12 +154,7 @@ class InputFragment : Fragment() {
                     var products=element.get("products")
                     val gson = Gson()
                     val json = gson.toJson(products)
-                    val jsonProducts= JSONArray(json)
 
-                    for(j in 0 until jsonProducts.length()){
-                        val el = jsonArray.getJSONObject(j)
-                        val ean= el.get("EAN")
-                    }
                 }
             }
         }

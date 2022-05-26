@@ -40,7 +40,7 @@
     <string name="unSuccessfulCreation">Neuspešna kreacija izdelka! Preveri vhodne vrednosti</string>
 
     <!-- Login activity -->
-    <string name="login">Prijaba</string>
+    <string name="login">Prijava</string>
     <string name="forgotPassword">Pozabljeno geslo</string>
     <string name="email">E-mail</string>
     <string name="password">Geslo</string>
@@ -48,5 +48,4 @@
     <string name="signUp"> Prijavi se </string>
     <string name="newUser">Nov uporabnik?</string>
     <string name="title_activity_login">Aktivnost za logiranje</string>
-
 </resources>

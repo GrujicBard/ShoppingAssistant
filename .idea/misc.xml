@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/dialog_item_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/dropdown_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/fragment_database.xml" value="0.36666666666666664" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/fragment_favorites.xml" value="0.36666666666666664" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/fragment_input.xml" value="0.36666666666666664" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/fragment_settings.xml" value="0.36666666666666664" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/fragment_shopping.xml" value="0.33" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/layout/recyclerview_item.xml" value="0.21240942028985507" />
+        <entry key="..\:/Datoteke iz namizja new/Tehnologije za vsepristojne aplikacije/Projekt/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Bard/AndroidStudioProjects/Project_TZVA/app/src/main/res/drawable/ic_baseline_remove_circle_24.xml" value="0.101" />
         <entry key="..\:/Users/Bard/AndroidStudioProjects/Project_TZVA/app/src/main/res/drawable/ic_baseline_remove_shopping_cart_24.xml" value="0.101" />
         <entry key="..\:/Users/Bard/AndroidStudioProjects/Project_TZVA/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.101" />

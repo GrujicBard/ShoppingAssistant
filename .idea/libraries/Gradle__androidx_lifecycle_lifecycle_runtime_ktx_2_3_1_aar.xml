@@ -3,17 +3,17 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6511e0d919eab7a80739c93f1573a0fc/transformed/lifecycle-runtime-ktx-2.3.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/79b0723eba62431c10f391e744e4d0b4/transformed/lifecycle-runtime-ktx-2.3.1/res" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/79b0723eba62431c10f391e744e4d0b4/transformed/lifecycle-runtime-ktx-2.3.1/res" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/res" />
-      <root url="jar://$PROJECT_DIR$/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/res" />
+      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/79b0723eba62431c10f391e744e4d0b4/transformed/lifecycle-runtime-ktx-2.3.1/res" />
+      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/res" />
+      <root url="jar://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/293acacb0b11d8a9ceae4873dae2f137/transformed/lifecycle-runtime-ktx-2.3.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime-ktx/2.3.1/c1479ee40da8e478749acfa4cc0be2f92c312ad8/lifecycle-runtime-ktx-2.3.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../TZVA_naloga_1/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime-ktx/2.3.1/c1479ee40da8e478749acfa4cc0be2f92c312ad8/lifecycle-runtime-ktx-2.3.1-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime-ktx/2.3.1/c1479ee40da8e478749acfa4cc0be2f92c312ad8/lifecycle-runtime-ktx-2.3.1-sources.jar!/" />
     </SOURCES>
   </library>
