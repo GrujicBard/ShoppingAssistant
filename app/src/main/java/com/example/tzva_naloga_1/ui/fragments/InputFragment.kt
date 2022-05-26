@@ -23,13 +23,15 @@ import com.google.firebase.database.*
 import com.google.gson.Gson
 import org.json.JSONArray
 import org.json.JSONException
+import org.json.JSONObject
 
 
 @Suppress("DEPRECATION")
 class InputFragment : Fragment() {
     private lateinit var database: DatabaseReference
     var market=""
-    lateinit var productsArray:JSONArray
+    var ean=""
+    lateinit var foundproduct:JSONObject
 
     private val itemViewModel: ItemViewModel by viewModels {
         ItemViewModelFactory((activity?.application as ItemsApplication).repository)
@@ -116,7 +118,10 @@ class InputFragment : Fragment() {
                 toast.show()
             }
         }
+        //to se prebere iz kamere in vnosnega polja
         market="Tuš"
+        ean="3838824256603"
+
         getDataFromFirebase()
         return view;
     }
@@ -149,10 +154,14 @@ class InputFragment : Fragment() {
             for (i in 0 until jsonArray.length()) {
                 val element = jsonArray.getJSONObject(i)
                 if(element.get("name").equals(market)){
-                    var products=element.get("products")
-                    val gson = Gson()
-                    val json = gson.toJson(products)
+                    var products=element.getJSONArray("products")
 
+                    for (p in 0 until products.length()) {
+                        val product = products.getJSONObject(p)
+                        if(product.get("EAN").equals(ean)){
+                            foundproduct=product;
+                        }
+                    }
                 }
             }
         }
