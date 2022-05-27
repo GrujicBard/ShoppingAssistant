@@ -11,6 +11,7 @@
     <string name="calendar">Izberi datum</string>
     <string name="storage">Shramba</string>
     <string name="shop">Trgovina</string>
+    <string name="scan">Skeniraj</string>
 
     <!-- Izdelki -->
     <string name="EAN">EAN</string>

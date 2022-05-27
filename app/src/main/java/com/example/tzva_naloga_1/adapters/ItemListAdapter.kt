@@ -57,7 +57,6 @@ class ItemListAdapter(
                     itemSelectedList.remove(position)
                     if(rv_cb.visibility == View.VISIBLE){
                         rv_cb.visibility = View.GONE
-                        Log.d("VISIBILITY", "View.GONE")
                     }
                     itemsList?.get(position)?.selected  = false
                     if(itemSelectedList.isEmpty()){
@@ -91,7 +90,6 @@ class ItemListAdapter(
             }
             if(!isEnable){
                 rv_cb.visibility = View.GONE
-                Log.d("VISIBILITY", "View.GONE")
             }
         }
     }
@@ -106,7 +104,6 @@ class ItemListAdapter(
         itemsList?.get(position)?.selected = true
         if(holder.rv_cb.visibility == View.GONE){
             holder.rv_cb.visibility = View.VISIBLE
-            Log.d("VISIBILITY", "View.VISIBLE")
         }
         showMenuDelete(true)
     }

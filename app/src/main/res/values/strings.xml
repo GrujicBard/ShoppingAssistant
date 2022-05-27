@@ -8,6 +8,7 @@
     <string name="btn_lang">Change Language</string>
     <string name="btn_nuke">Reset database</string>
     <string name="calendar">Pick date</string>
+    <string name="scan">Scan</string>
 
 
     <!-- Items -->

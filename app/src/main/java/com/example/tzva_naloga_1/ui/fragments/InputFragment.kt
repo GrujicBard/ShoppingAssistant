@@ -2,10 +2,8 @@ package com.example.tzva_naloga_1.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
-import android.view.Gravity
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.util.Log
+import android.view.*
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import androidx.fragment.app.Fragment
@@ -20,6 +18,9 @@ import com.example.tzva_naloga_1.database.entities.Shop
 import com.example.tzva_naloga_1.database.entities.Storage
 import com.google.firebase.database.*
 import com.google.gson.Gson
+import com.journeyapps.barcodescanner.ScanContract
+import com.journeyapps.barcodescanner.ScanIntentResult
+import com.journeyapps.barcodescanner.ScanOptions
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
@@ -33,10 +34,10 @@ class InputFragment : Fragment() {
     }
 
     private lateinit var database: DatabaseReference
-    var market = ""
-    var ean=""
+    private var market = ""
+    private var ean=""
 
-    lateinit var foundproduct:JSONObject
+    var foundproduct: JSONObject? = null
     lateinit var et_EAN:EditText
     lateinit var et_item_name:EditText
     lateinit var et_price:EditText
@@ -72,6 +73,8 @@ class InputFragment : Fragment() {
         dd_storage = view.findViewById(R.id.dd_storage)
         dd_shop = view.findViewById(R.id.dd_shop)
         dd_cat = view.findViewById(R.id.dd_cat)
+
+        var btn_ean_scan: Button = view.findViewById(R.id.btn_ean_scan)
 
 
         success = getString(R.string.successfulCreation)
@@ -115,15 +118,25 @@ class InputFragment : Fragment() {
             cb_isFavoriteItem.requestFocus()
         }*/
 
+        btn_ean_scan.setOnClickListener{
+//            barcodeLauncher.launch(ScanOptions());
+
+        }
+
+
         btn_save.setOnClickListener {
             insertNewItem()
 
         }
-        //to se prebere iz kamere in vnosnega polja
-        market="Tuš"
-        ean="3838824256603"
 
+        ean = "7610700004999"
+        market = "Tuš"
+        Log.d("EAN", ean)
         getDataFromFirebase()
+
+
+        Log.d("foundproduct", foundproduct.toString())
+
         return view;
     }
     private fun insertNewItem(){
@@ -153,9 +166,10 @@ class InputFragment : Fragment() {
         }
     }
 
-    private fun getDataFromFirebase() {
-        var database = FirebaseDatabase.getInstance()
+    private fun getDataFromFirebase(): JSONObject? {
+        val database = FirebaseDatabase.getInstance()
         val reference = database.getReference("")
+        var result: JSONObject? = null
 
         reference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
@@ -168,31 +182,52 @@ class InputFragment : Fragment() {
                     e.printStackTrace()
                 }
                 val jsonArray = arrayjson
-                fetchProductFromMarket(jsonArray)
+                result = fetchProductFromMarket(jsonArray)
             }
 
             override fun onCancelled(databaseError: DatabaseError) {
                 print(databaseError.message)
             }
         })
+        Log.d("getDataFromFirebase", result.toString())
+        return result
     }
 
-    private fun fetchProductFromMarket(jsonArray: JSONArray?){
+    private fun fetchProductFromMarket(jsonArray: JSONArray?): JSONObject? {
         if (jsonArray != null) {
             for (i in 0 until jsonArray.length()) {
                 val element = jsonArray.getJSONObject(i)
                 if(element.get("name").equals(market)){
-                    var products=element.getJSONArray("products")
+                    val products=element.getJSONArray("products")
 
                     for (p in 0 until products.length()) {
                         val product = products.getJSONObject(p)
                         if(product.get("EAN").equals(ean)){
-                            foundproduct=product;
+                            Log.d("JE ENAK", product.toString())
+                            return product
+                            break;
+                        }else{
+                            Log.d("NI ENAK","EAN NI ENAK")
                         }
                     }
                 }
             }
         }
+        return null
     }
+
+    private val barcodeLauncher = registerForActivityResult(ScanContract()
+    ) { result: ScanIntentResult ->
+        if (result.contents == null) {
+            Toast.makeText(requireContext(), "Cancelled", Toast.LENGTH_LONG).show()
+        } else {
+            et_EAN.setText(result.contents.toString())
+//            market =  "Tuš"
+//            ean = result.contents.toString()
+
+            Toast.makeText(requireContext(), foundproduct.toString(), Toast.LENGTH_LONG).show()
+        }
+    }
+
 
 }
