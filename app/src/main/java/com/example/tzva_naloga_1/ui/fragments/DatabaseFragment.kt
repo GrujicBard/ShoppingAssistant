@@ -2,7 +2,8 @@ package com.example.tzva_naloga_1.ui.fragments
 
 import android.os.Bundle
 import android.view.*
-import android.widget.Toast
+import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tzva_naloga_1.R
 import com.example.tzva_naloga_1.adapters.ItemListAdapter
 import com.example.tzva_naloga_1.database.*
-import com.example.tzva_naloga_1.database.entities.ItemEntity
+import com.example.tzva_naloga_1.database.entities.*
 import com.example.tzva_naloga_1.ui.dialog_fragments.ItemDialogFragment
 
 class DatabaseFragment : Fragment(), ItemListAdapter.OnItemClickListener {
@@ -18,6 +19,8 @@ class DatabaseFragment : Fragment(), ItemListAdapter.OnItemClickListener {
     private val itemViewModel: ItemViewModel by viewModels {
         ItemViewModelFactory((activity?.application as ItemsApplication).repository)
     }
+
+
     private var mainMenu: Menu? = null
 
     override fun onCreateView(
@@ -36,8 +39,61 @@ class DatabaseFragment : Fragment(), ItemListAdapter.OnItemClickListener {
             items.let { adapter.submitList(it) }
         }
 
+        val dd_storage: AutoCompleteTextView = view.findViewById(R.id.dd_storage)
+        dd_storage.setAdapter(ArrayAdapter(requireContext(), R.layout.dropdown_item, StorageSearch.values()))
+
+        val dd_shop: AutoCompleteTextView = view.findViewById(R.id.dd_shop)
+        dd_shop.setAdapter(ArrayAdapter(requireContext(), R.layout.dropdown_item, ShopSearch.values()))
+
+        val dd_category: AutoCompleteTextView = view.findViewById(R.id.dd_category)
+        dd_category.setAdapter(ArrayAdapter(requireContext(), R.layout.dropdown_item, ItemCategorySearch.values()))
+
+        dd_storage.setOnItemClickListener{ _, _, position, _ ->
+            itemViewModel.allItems.observe(viewLifecycleOwner) { items ->
+                when(position) {
+                    0 -> adapter.submitList(items.filter { item -> item.storage == "Freezer" })
+                    1 -> adapter.submitList(items.filter { item -> item.storage == "Cupboard" })
+                    2 -> adapter.submitList(items.filter { item -> item.storage == "Bathroom" })
+                    3 -> adapter.submitList(items.filter { item -> item.storage == "Cellar" })
+                    4 -> adapter.submitList(items.filter { item -> item.storage.any() })
+                }
+            }
+        }
+
+        dd_shop.setOnItemClickListener{ _, _, position, _ ->
+            itemViewModel.allItems.observe(viewLifecycleOwner) { items ->
+                when(position) {
+                    0 -> adapter.submitList(items.filter { item -> item.shop == "Mercator" })
+                    1 -> adapter.submitList(items.filter { item -> item.shop == "Spar" })
+                    2 -> adapter.submitList(items.filter { item -> item.shop == "Lidl" })
+                    4 -> adapter.submitList(items.filter { item -> item.shop == "Tuš" })
+                    5 -> adapter.submitList(items.filter { item -> item.shop == "Hofer" })
+                    6 -> adapter.submitList(items.filter { item -> item.shop.any() })
+                }
+            }
+        }
+
+        dd_category.setOnItemClickListener{ _, _, position, _ ->
+            itemViewModel.allItems.observe(viewLifecycleOwner) { items ->
+                when(position) {
+                    0 -> adapter.submitList(items.filter { item -> item.category == "Milk_eggs_and_dairy_products" })
+                    1 -> adapter.submitList(items.filter { item -> item.category == "Meat_products" })
+                    2 -> adapter.submitList(items.filter { item -> item.category == "Bread_and_pastries" })
+                    3 -> adapter.submitList(items.filter { item -> item.category == "Frozen_food" })
+                    4 -> adapter.submitList(items.filter { item -> item.category == "Soft_drinks" })
+                    5 -> adapter.submitList(items.filter { item -> item.category == "Alcohol" })
+                    6 -> adapter.submitList(items.filter { item -> item.category == "Soups_rice_and_sauces" })
+                    7 -> adapter.submitList(items.filter { item -> item.category == "Salty_snacks" })
+                    8 -> adapter.submitList(items.filter { item -> item.category == "Cleaning_products" })
+                    9 -> adapter.submitList(items.filter { item -> item.category.any() })
+                }
+            }
+        }
+
         return view;
     }
+
+
 
     //Open dialog on recyclerview Item click
     override fun onItemClick(item: ItemEntity) {
