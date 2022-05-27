@@ -6,7 +6,7 @@
     <string name="btn_close">Close</string>
     <string name="btn_save">Save</string>
     <string name="btn_lang">Change Language</string>
-    <string name="btn_nuke">Drop database</string>
+    <string name="btn_nuke">Reset database</string>
     <string name="calendar">Pick date</string>
 
 

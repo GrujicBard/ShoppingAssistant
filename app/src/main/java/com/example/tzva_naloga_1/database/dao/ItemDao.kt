@@ -8,13 +8,13 @@ import kotlinx.coroutines.flow.Flow
 interface ItemDao {
 
     @Query("SELECT * FROM item WHERE stock > 0 ORDER BY name DESC")
-    fun getAllItems(): Flow<List<ItemEntity>>
+    fun getAllItems(): Flow<MutableList<ItemEntity>>
 
     @Query("SELECT * FROM item WHERE IsFavoriteItem = 1 ORDER BY itemId DESC")
-    fun getAllFavoriteItems(): Flow<List<ItemEntity>>
+    fun getAllFavoriteItems(): Flow<MutableList<ItemEntity>>
 
     @Query("SELECT * FROM item WHERE IsOnShoppingList = 1 ORDER BY itemId DESC")
-    fun getAllShoppingItems(): Flow<List<ItemEntity>>
+    fun getAllShoppingItems(): Flow<MutableList<ItemEntity>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertItem(item: ItemEntity?)
@@ -27,4 +27,10 @@ interface ItemDao {
 
     @Update
     suspend fun updateItem(item: ItemEntity?)
+
+    @Update
+    suspend fun updateItems(items: List<ItemEntity>): Int
+
+    @Query("DELETE FROM item WHERE selected = 1")
+    suspend fun deleteAllSelected()
 }

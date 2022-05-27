@@ -1,10 +1,14 @@
 package com.example.tzva_naloga_1.adapters
 
+import android.annotation.SuppressLint
 import android.util.Log
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.asFlow
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -17,16 +21,23 @@ import android.view.MenuInflater as menu
 
 class ItemListAdapter(
     private val onItemClickListener: OnItemClickListener,
+    private val owner: LifecycleOwner,
     //val onItemLongClickListener: OnItemLongClickListener,
+    private var dataset: LiveData<MutableList<ItemEntity>>,
     private val itemViewModel: ItemViewModel,
-    //private val showMenuDelete: (Boolean) -> Unit,
+    private val showMenuDelete: (Boolean) -> Unit,
 ) :
     ListAdapter<ItemEntity, ItemListAdapter.ItemViewHolder>(ItemDiffCallback()) {
     private var isEnable = false
     private var isSelectAll = false
     private var itemSelectedList = mutableListOf<Int>()
+    private var itemsList: MutableList<ItemEntity>? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
+        dataset.observe(owner) { items ->
+            submitList(items)
+            itemsList = items
+        }
         val inflater = LayoutInflater.from(parent.context)
 
         return ItemViewHolder(inflater.inflate(R.layout.recyclerview_item, parent, false))
@@ -41,7 +52,23 @@ class ItemListAdapter(
         init {
             itemView.setOnClickListener {
                 val position = adapterPosition
-                onItemClickListener.onItemClick(getItem(position))
+                val item = getItem(position)
+                if (itemSelectedList.contains(position)) {
+                    itemSelectedList.remove(position)
+                    if(rv_cb.visibility == View.VISIBLE){
+                        rv_cb.visibility = View.GONE
+                        Log.d("VISIBILITY", "View.GONE")
+                    }
+                    itemsList?.get(position)?.selected  = false
+                    if(itemSelectedList.isEmpty()){
+                        showMenuDelete(false)
+                        isEnable = false
+                    }
+                } else if (isEnable) {
+                    selectItem(this, item, position)
+                } else {
+                    onItemClickListener.onItemClick(getItem(position))
+                }
             }
             /* itemView.setOnLongClickListener {
                 val position = adapterPosition
@@ -60,17 +87,37 @@ class ItemListAdapter(
                 itemView.resources.getString(R.string.rv_stock, item.stock.toString())
             itemView.setOnLongClickListener {
                 selectItem(holder, item, position)
-                Log.d("TEST", "LONG CLIIIIIIIIIIIIIICK")
                 true
+            }
+            if(!isEnable){
+                rv_cb.visibility = View.GONE
+                Log.d("VISIBILITY", "View.GONE")
             }
         }
     }
 
-    private fun selectItem(holder: ItemListAdapter.ItemViewHolder, item: ItemEntity, position: Int) {
+    private fun selectItem(
+        holder: ItemListAdapter.ItemViewHolder,
+        item: ItemEntity,
+        position: Int,
+    ) {
         isEnable = true
         itemSelectedList.add(position)
-        item.selected = true
-        //showMenuDelete(true)
+        itemsList?.get(position)?.selected = true
+        if(holder.rv_cb.visibility == View.GONE){
+            holder.rv_cb.visibility = View.VISIBLE
+            Log.d("VISIBILITY", "View.VISIBLE")
+        }
+        showMenuDelete(true)
+    }
+
+    fun deleteSelectedItem() { // ITEM SELECTED DELA AL NE DELA????
+        if(itemSelectedList.isNotEmpty()){
+            itemsList?.let { itemViewModel.updateItems(it) }
+            itemViewModel.deleteAllItemsSelected()
+            isEnable = false
+            itemSelectedList.clear()
+        }
     }
 
     interface OnItemClickListener {

@@ -53,6 +53,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation "androidx.activity:activity-ktx:1.4.0"
     implementation("androidx.fragment:fragment-ktx:1.4.1")
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
 
 
     // Room components
@@ -69,7 +70,11 @@ dependencies {
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"
 
-    // Import the BoM for the Firebase platform
+    // Firebase
     implementation platform('com.google.firebase:firebase-bom:30.0.2')
     implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.9.0'
 }

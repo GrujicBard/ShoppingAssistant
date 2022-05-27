@@ -6,9 +6,9 @@ import kotlinx.coroutines.launch
 
 class ItemViewModel(private val repository: ItemRepository) : ViewModel(){
 
-    val allItems: LiveData<List<ItemEntity>> = repository.allItems.asLiveData()
-    val allFavoriteItems: LiveData<List<ItemEntity>> = repository.allFavoriteItems.asLiveData()
-    val allShoppingItems: LiveData<List<ItemEntity>> = repository.allShoppingItems.asLiveData()
+    val allItems: LiveData<MutableList<ItemEntity>> = repository.allItems.asLiveData()
+    val allFavoriteItems: LiveData<MutableList<ItemEntity>> = repository.allFavoriteItems.asLiveData()
+    val allShoppingItems: LiveData<MutableList<ItemEntity>> = repository.allShoppingItems.asLiveData()
 
     /**
      * Launching a new coroutine to insert the data in a non-blocking way
@@ -22,12 +22,20 @@ class ItemViewModel(private val repository: ItemRepository) : ViewModel(){
         repository.updateItem(item)
     }
 
+    fun updateItems(items: List<ItemEntity>) = viewModelScope.launch {
+        repository.updateItems(items)
+    }
+
     fun deleteAllItems() = viewModelScope.launch {
         repository.deleteAllItems()
     }
 
     fun deleteItem(item: ItemEntity) = viewModelScope.launch {
-        repository.deleteAllItems(item)
+        repository.deleteItem(item)
+    }
+
+    fun deleteAllItemsSelected() = viewModelScope.launch {
+        repository.deleteAllItemsSelected()
     }
 
 }

@@ -50,25 +50,4 @@ class MainActivity : AppCompatActivity() {
         }.attach();
     }
 
-    fun showDeleteMenu(show: Boolean){
-        mainMenu?.findItem(R.id.menu_delete)?.isVisible = show
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        mainMenu = menu
-        menuInflater.inflate(R.menu.custom_menu, mainMenu)
-        showDeleteMenu(true)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.menu_delete -> { delete()}
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
-    private fun delete() {
-        TODO("Not yet implemented")
-    }
 }

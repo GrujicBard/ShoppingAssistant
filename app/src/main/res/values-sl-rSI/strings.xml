@@ -7,7 +7,7 @@
     <string name="btn_close">Zapri</string>
     <string name="btn_save">Shrani</string>
     <string name="btn_lang">Spremeni Jezik</string>
-    <string name="btn_nuke">Zbriši bazo</string>
+    <string name="btn_nuke">Resetiraj bazo</string>
     <string name="calendar">Izberi datum</string>
     <string name="storage">Shramba</string>
     <string name="shop">Trgovina</string>

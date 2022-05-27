@@ -79,10 +79,10 @@ class ItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         btn_favorite_dg.setOnClickListener{
             if(favorite){
                 favorite = false
-                btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_24)
+                btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
             }else{
                 favorite = true
-                btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
+                btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_24)
             }
         }
         btn_close.setOnClickListener{ //Update item on close
@@ -100,9 +100,9 @@ class ItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         }
 
         if (item.IsFavoriteItem) {
-            btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
-        } else {
             btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_24)
+        } else {
+            btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
         }
 
         return view;
