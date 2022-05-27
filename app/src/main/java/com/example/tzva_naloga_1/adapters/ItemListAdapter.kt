@@ -137,5 +137,4 @@ class ItemDiffCallback : DiffUtil.ItemCallback<ItemEntity>() {
     override fun areContentsTheSame(oldItem: ItemEntity, newItem: ItemEntity): Boolean {
         return oldItem.itemId == newItem.itemId
     }
-
 }
