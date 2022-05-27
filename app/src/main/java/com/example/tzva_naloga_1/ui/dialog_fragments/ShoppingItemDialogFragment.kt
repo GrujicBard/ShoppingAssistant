@@ -31,7 +31,6 @@ class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         val tv_shop_dg: TextView = view.findViewById(R.id.tv_shop_dg);
         val tv_quantity_dg: TextView = view.findViewById(R.id.tv_quantity_dg);
         val tv_price_dg: TextView = view.findViewById(R.id.tv_price_dg);
-        val tv_stock_dg: TextView = view.findViewById(R.id.tv_stock_dg);
         val tv_description_dg: TextView = view.findViewById(R.id.tv_description_dg);
 
         //Buttons
@@ -46,7 +45,6 @@ class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         tv_shop_dg.text = item.shop
         tv_quantity_dg.text = item.quantity
         tv_price_dg.text = resources.getString(R.string.currency, item.price);
-        tv_stock_dg.text = item.stock.toString()
         tv_description_dg.text = item.description
 
         //Item
