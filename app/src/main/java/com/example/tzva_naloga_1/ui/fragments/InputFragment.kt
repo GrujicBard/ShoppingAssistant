@@ -24,6 +24,7 @@ import com.journeyapps.barcodescanner.ScanOptions
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
+import java.util.*
 
 
 @Suppress("DEPRECATION")
@@ -35,22 +36,21 @@ class InputFragment : Fragment() {
 
     private lateinit var database: DatabaseReference
     private var market = ""
-    private var ean=""
+    private var ean = ""
 
-    var foundproduct: JSONObject? = null
-    lateinit var et_EAN:EditText
-    lateinit var et_item_name:EditText
-    lateinit var et_price:EditText
-    lateinit var et_description:EditText
-    lateinit var et_stock:EditText
-    lateinit var et_quantity:EditText
+    lateinit var et_EAN: EditText
+    lateinit var et_item_name: EditText
+    lateinit var et_price: EditText
+    lateinit var et_description: EditText
+    lateinit var et_stock: EditText
+    lateinit var et_quantity: EditText
 
-    lateinit var dd_storage:AutoCompleteTextView
-    lateinit var dd_shop:AutoCompleteTextView
-    lateinit var dd_cat:AutoCompleteTextView
+    lateinit var dd_storage: AutoCompleteTextView
+    lateinit var dd_shop: AutoCompleteTextView
+    lateinit var dd_cat: AutoCompleteTextView
 
-    lateinit var success:String
-    lateinit var unSuccess:String
+    lateinit var success: String
+    lateinit var unSuccess: String
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -62,7 +62,7 @@ class InputFragment : Fragment() {
 //        val picker : MaterialDatePicker<*> = builder.build()
 
         //Item
-        et_EAN  = view.findViewById(R.id.et_EAN)
+        et_EAN = view.findViewById(R.id.et_EAN)
         et_item_name = view.findViewById(R.id.et_item_name)
         et_description = view.findViewById(R.id.et_description)
         et_price = view.findViewById(R.id.et_price)
@@ -78,7 +78,7 @@ class InputFragment : Fragment() {
 
 
         success = getString(R.string.successfulCreation)
-        unSuccess= getString(R.string.unSuccessfulCreation)
+        unSuccess = getString(R.string.unSuccessfulCreation)
 
 
         val success: String = getString(R.string.successfulCreation)
@@ -118,9 +118,8 @@ class InputFragment : Fragment() {
             cb_isFavoriteItem.requestFocus()
         }*/
 
-        btn_ean_scan.setOnClickListener{
-//            barcodeLauncher.launch(ScanOptions());
-
+        btn_ean_scan.setOnClickListener {
+            barcodeLauncher.launch(ScanOptions());
         }
 
 
@@ -129,17 +128,10 @@ class InputFragment : Fragment() {
 
         }
 
-        ean = "7610700004999"
-        market = "Tuš"
-        Log.d("EAN", ean)
-        getDataFromFirebase()
-
-
-        Log.d("foundproduct", foundproduct.toString())
-
         return view;
     }
-    private fun insertNewItem(){
+
+    private fun insertNewItem() {
         val item = ItemEntity(
             0,
             et_EAN.text.toString(),
@@ -157,22 +149,22 @@ class InputFragment : Fragment() {
             et_item_name.text != null &&
             et_description.text != null &&
             et_price.text != null &&
-            et_quantity.text != null)
-        {
+            et_quantity.text != null
+        ) {
             itemViewModel.insertItem(item)
             val toast = Toast.makeText(activity?.application, success, Toast.LENGTH_SHORT)
-            toast.setGravity(Gravity.BOTTOM,0, 300);
+            toast.setGravity(Gravity.BOTTOM, 0, 300);
             toast.show()
         }
     }
 
-    private fun getDataFromFirebase(): JSONObject? {
+    private fun getDataFromFirebase() {
         val database = FirebaseDatabase.getInstance()
         val reference = database.getReference("")
-        var result: JSONObject? = null
 
         reference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
+
                 val gson = Gson()
                 val data = gson.toJson(dataSnapshot.value)
                 var arrayjson: JSONArray? = null
@@ -182,38 +174,45 @@ class InputFragment : Fragment() {
                     e.printStackTrace()
                 }
                 val jsonArray = arrayjson
-                result = fetchProductFromMarket(jsonArray)
+                fetchProductFromMarket(jsonArray)
             }
 
             override fun onCancelled(databaseError: DatabaseError) {
                 print(databaseError.message)
             }
         })
-        Log.d("getDataFromFirebase", result.toString())
-        return result
     }
 
-    private fun fetchProductFromMarket(jsonArray: JSONArray?): JSONObject? {
+    private fun fetchProductFromMarket(jsonArray: JSONArray?) {
         if (jsonArray != null) {
             for (i in 0 until jsonArray.length()) {
                 val element = jsonArray.getJSONObject(i)
-                if(element.get("name").equals(market)){
-                    val products=element.getJSONArray("products")
+                if (element.get("name").equals(market)) {
+                    val products = element.getJSONArray("products")
 
                     for (p in 0 until products.length()) {
                         val product = products.getJSONObject(p)
-                        if(product.get("EAN").equals(ean)){
-                            Log.d("JE ENAK", product.toString())
-                            return product
+                        if (product.get("EAN").equals(ean)) {
+                            et_item_name.setText(product.get("name").toString())
+                            et_price.setText(product.get("price").toString())
+                            et_quantity.setText(product.get("quantity").toString())
+                            et_description.setText(product.get("description").toString())
+
+                            //default values
+                            et_stock.setText("1")
+                            dd_storage.setText(Storage.FREEZER.toString(), false)
+
+                            //Set these from database
+                            dd_cat.setText(ItemCategory.MILK_EGGS_AND_DAIRY_PRODUCTS.toString(), false)
+                            dd_shop.setText(Shop.SPAR.toString(), false)
                             break;
-                        }else{
-                            Log.d("NI ENAK","EAN NI ENAK")
+                        } else {
+                            Toast.makeText(requireContext(), "Product not in database.", Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
             }
         }
-        return null
     }
 
     private val barcodeLauncher = registerForActivityResult(ScanContract()
@@ -222,10 +221,9 @@ class InputFragment : Fragment() {
             Toast.makeText(requireContext(), "Cancelled", Toast.LENGTH_LONG).show()
         } else {
             et_EAN.setText(result.contents.toString())
-//            market =  "Tuš"
-//            ean = result.contents.toString()
-
-            Toast.makeText(requireContext(), foundproduct.toString(), Toast.LENGTH_LONG).show()
+            market = "Tuš"
+            ean = result.contents.toString()
+            getDataFromFirebase()
         }
     }
 

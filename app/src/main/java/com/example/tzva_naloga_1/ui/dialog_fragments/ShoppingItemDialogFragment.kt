@@ -23,7 +23,7 @@ class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         savedInstanceState: Bundle?,
     ): View {
 
-        val view: View = inflater.inflate(R.layout.dialog_item_info, container, false);
+        val view: View = inflater.inflate(R.layout.dialog_item_info_no_stock, container, false);
 
         //Text Views
         val tv_name_dg: TextView = view.findViewById(R.id.tv_name_dg);
@@ -35,8 +35,6 @@ class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         val tv_description_dg: TextView = view.findViewById(R.id.tv_description_dg);
 
         //Buttons
-        val btn_stock_minus: ImageButton = view.findViewById(R.id.btn_stock_minus);
-        val btn_stock_plus: ImageButton = view.findViewById(R.id.btn_stock_plus);
         val btn_shopping_dg: ImageButton = view.findViewById(R.id.btn_shopping_dg);
         val btn_favorite_dg: ImageButton = view.findViewById(R.id.btn_favorite_dg);
         val btn_close: Button = view.findViewById(R.id.btn_close);
@@ -52,19 +50,10 @@ class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         tv_description_dg.text = item.description
 
         //Item
-        var stock = item.stock
         var shopping = item.IsOnShoppingList
         var favorite = item.IsFavoriteItem
 
         //Listeners
-        btn_stock_minus.setOnClickListener{
-            stock--
-            tv_stock_dg.text = stock.toString()
-        }
-        btn_stock_plus.setOnClickListener{
-            stock++
-            tv_stock_dg.text = stock.toString()
-        }
         btn_shopping_dg.setOnClickListener {
             if(shopping){
                 shopping = false
@@ -84,7 +73,6 @@ class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
             }
         }
         btn_close.setOnClickListener{ //Update item on close
-            item.stock = stock
             item.IsOnShoppingList = shopping
             item.IsFavoriteItem = favorite
             itemViewModel.updateItem(item)
@@ -98,9 +86,9 @@ class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         }
 
         if (item.IsFavoriteItem) {
-            btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
-        } else {
             btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_24)
+        } else {
+            btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
         }
 
         return view;
