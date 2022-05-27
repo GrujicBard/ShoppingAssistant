@@ -34,6 +34,7 @@ class FavoritesFragment : Fragment(), ItemListAdapter.OnItemClickListener, ItemL
         val adapter = ItemListAdapter(this, itemViewModel)
 
 
+        
 
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
