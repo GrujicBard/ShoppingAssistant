@@ -19,8 +19,8 @@ data class ItemEntity(
     val shop: String,
     val storage: String,
     val category: String,
-    var IsFavoriteItem: Boolean = false,
-    var IsOnShoppingList: Boolean = false,
+    var isFavoriteItem: Boolean = false,
+    var isOnShoppingList: Boolean = false,
     val description: String,
     var selected: Boolean = false
 )

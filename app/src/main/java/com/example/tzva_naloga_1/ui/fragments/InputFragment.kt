@@ -226,6 +226,4 @@ class InputFragment : Fragment() {
             getDataFromFirebase()
         }
     }
-
-
 }

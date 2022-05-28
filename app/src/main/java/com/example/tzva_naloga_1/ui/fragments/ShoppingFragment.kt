@@ -1,20 +1,17 @@
 package com.example.tzva_naloga_1.ui.fragments
 
-import android.content.Context
+import android.app.AlertDialog
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.Menu
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tzva_naloga_1.R
 import com.example.tzva_naloga_1.adapters.ItemListAdapter
+import com.example.tzva_naloga_1.adapters.ShoppingListAdapter
 import com.example.tzva_naloga_1.database.*
 import com.example.tzva_naloga_1.database.entities.ItemCategorySearch
 import com.example.tzva_naloga_1.database.entities.ItemEntity
@@ -22,12 +19,15 @@ import com.example.tzva_naloga_1.database.entities.ShopSearch
 import com.example.tzva_naloga_1.database.entities.StorageSearch
 import com.example.tzva_naloga_1.ui.dialog_fragments.ShoppingItemDialogFragment
 
-class ShoppingFragment : Fragment(), ItemListAdapter.OnItemClickListener{
+class ShoppingFragment : Fragment(), ShoppingListAdapter.OnItemClickListener{
 
     private val itemViewModel: ItemViewModel by viewModels {
         ItemViewModelFactory((activity?.application as ItemsApplication).repository)
     }
-    private var mainMenu: Menu? = null
+    private var shoppingListAdapter: ShoppingListAdapter? = null
+    private var menu_delete: Menu? = null
+    private var menu_select_all: Menu? = null
+    private var menu_close: Menu? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,13 +36,13 @@ class ShoppingFragment : Fragment(), ItemListAdapter.OnItemClickListener{
         val view = inflater.inflate(R.layout.fragment_database, container, false);
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview);
-        val adapter = ItemListAdapter(this, viewLifecycleOwner, itemViewModel.allShoppingItems, itemViewModel){ show -> showDeleteMenu(show) }
+        shoppingListAdapter = ShoppingListAdapter(this, viewLifecycleOwner, itemViewModel.allShoppingItems, itemViewModel){ show -> showDeleteMenu(show) }
 
-        recyclerView.adapter = adapter
+        recyclerView.adapter = shoppingListAdapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         itemViewModel.allShoppingItems.observe(viewLifecycleOwner) { items ->
-            items.let { adapter.submitList(it) }
+            items.let { shoppingListAdapter!!.submitList(it) }
         }
 
         val dd_storage: AutoCompleteTextView = view.findViewById(R.id.dd_storage)
@@ -57,11 +57,11 @@ class ShoppingFragment : Fragment(), ItemListAdapter.OnItemClickListener{
         dd_storage.setOnItemClickListener{ _, _, position, _ ->
             itemViewModel.allShoppingItems.observe(viewLifecycleOwner) { items ->
                 when(position) {
-                    0 -> adapter.submitList(items.filter { item -> item.storage == "Freezer" })
-                    1 -> adapter.submitList(items.filter { item -> item.storage == "Cupboard" })
-                    2 -> adapter.submitList(items.filter { item -> item.storage == "Bathroom" })
-                    3 -> adapter.submitList(items.filter { item -> item.storage == "Cellar" })
-                    4 -> adapter.submitList(items.filter { item -> item.storage.any() })
+                    0 -> shoppingListAdapter!!.submitList(items.filter { item -> item.storage == "Freezer" })
+                    1 -> shoppingListAdapter!!.submitList(items.filter { item -> item.storage == "Cupboard" })
+                    2 -> shoppingListAdapter!!.submitList(items.filter { item -> item.storage == "Bathroom" })
+                    3 -> shoppingListAdapter!!.submitList(items.filter { item -> item.storage == "Cellar" })
+                    4 -> shoppingListAdapter!!.submitList(items.filter { item -> item.storage.any() })
                 }
             }
         }
@@ -69,12 +69,12 @@ class ShoppingFragment : Fragment(), ItemListAdapter.OnItemClickListener{
         dd_shop.setOnItemClickListener{ _, _, position, _ ->
             itemViewModel.allShoppingItems.observe(viewLifecycleOwner) { items ->
                 when(position) {
-                    0 -> adapter.submitList(items.filter { item -> item.shop == "Mercator" })
-                    1 -> adapter.submitList(items.filter { item -> item.shop == "Spar" })
-                    2 -> adapter.submitList(items.filter { item -> item.shop == "Lidl" })
-                    4 -> adapter.submitList(items.filter { item -> item.shop == "Tuš" })
-                    5 -> adapter.submitList(items.filter { item -> item.shop == "Hofer" })
-                    6 -> adapter.submitList(items.filter { item -> item.shop.any() })
+                    0 -> shoppingListAdapter!!.submitList(items.filter { item -> item.shop == "Mercator" })
+                    1 -> shoppingListAdapter!!.submitList(items.filter { item -> item.shop == "Spar" })
+                    2 -> shoppingListAdapter!!.submitList(items.filter { item -> item.shop == "Lidl" })
+                    4 -> shoppingListAdapter!!.submitList(items.filter { item -> item.shop == "Tuš" })
+                    5 -> shoppingListAdapter!!.submitList(items.filter { item -> item.shop == "Hofer" })
+                    6 -> shoppingListAdapter!!.submitList(items.filter { item -> item.shop.any() })
                 }
             }
         }
@@ -82,16 +82,16 @@ class ShoppingFragment : Fragment(), ItemListAdapter.OnItemClickListener{
         dd_category.setOnItemClickListener{ _, _, position, _ ->
             itemViewModel.allShoppingItems.observe(viewLifecycleOwner) { items ->
                 when(position) {
-                    0 -> adapter.submitList(items.filter { item -> item.category == "Milk_eggs_and_dairy_products" })
-                    1 -> adapter.submitList(items.filter { item -> item.category == "Meat_products" })
-                    2 -> adapter.submitList(items.filter { item -> item.category == "Bread_and_pastries" })
-                    3 -> adapter.submitList(items.filter { item -> item.category == "Frozen_food" })
-                    4 -> adapter.submitList(items.filter { item -> item.category == "Soft_drinks" })
-                    5 -> adapter.submitList(items.filter { item -> item.category == "Alcohol" })
-                    6 -> adapter.submitList(items.filter { item -> item.category == "Soups_rice_and_sauces" })
-                    7 -> adapter.submitList(items.filter { item -> item.category == "Salty_snacks" })
-                    8 -> adapter.submitList(items.filter { item -> item.category == "Cleaning_products" })
-                    9 -> adapter.submitList(items.filter { item -> item.category.any() })
+                    0 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category == "Milk_eggs_and_dairy_products" })
+                    1 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category == "Meat_products" })
+                    2 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category == "Bread_and_pastries" })
+                    3 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category == "Frozen_food" })
+                    4 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category == "Soft_drinks" })
+                    5 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category == "Alcohol" })
+                    6 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category == "Soups_rice_and_sauces" })
+                    7 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category == "Salty_snacks" })
+                    8 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category == "Cleaning_products" })
+                    9 -> shoppingListAdapter!!.submitList(items.filter { item -> item.category.any() })
                 }
             }
         }
@@ -107,6 +107,57 @@ class ShoppingFragment : Fragment(), ItemListAdapter.OnItemClickListener{
     }
 
     private fun showDeleteMenu(show: Boolean) {
-        mainMenu?.findItem(R.id.menu_delete)?.isVisible = show
+        menu_delete?.findItem(R.id.menu_delete)?.isVisible = show
+        menu_close?.findItem(R.id.menu_close)?.isVisible = show
+        menu_select_all?.findItem(R.id.menu_select_all)?.isVisible = show
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        menu_delete = menu
+        menu_close = menu
+        menu_select_all = menu
+        inflater.inflate(R.menu.custom_menu, menu_delete)
+        showDeleteMenu(false)
+        return super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.menu_delete -> {
+                delete()
+            }
+            R.id.menu_select_all ->{
+                selectAll()
+            }
+            R.id.menu_close ->{
+                close()
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun delete() {
+        val alertDialog = AlertDialog.Builder(requireContext())
+        alertDialog.setTitle(resources.getString(R.string.shoppingToast))
+        alertDialog.setPositiveButton(resources.getString(R.string.confirm)){_,_ ->{}
+            shoppingListAdapter!!.deleteSelectedItem()
+            showDeleteMenu(false)
+        }
+        alertDialog.setNegativeButton(resources.getString(R.string.cancel)){_,_ ->}
+        alertDialog.show()
+    }
+
+    private fun selectAll(){
+        shoppingListAdapter!!.selectAll()
+        if(shoppingListAdapter!!.isSelectAll()){
+            menu_select_all!!.findItem(R.id.menu_select_all).setIcon(R.drawable.ic_baseline_deselect_24)
+        }else if(!shoppingListAdapter!!.isSelectAll()){
+            menu_select_all!!.findItem(R.id.menu_select_all).setIcon(R.drawable.ic_baseline_select_all_24)
+        }
+    }
+
+    private fun close(){
+        shoppingListAdapter!!.close()
+        showDeleteMenu(false)
     }
 }

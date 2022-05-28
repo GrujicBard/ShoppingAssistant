@@ -48,47 +48,46 @@ class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         tv_description_dg.text = item.description
 
         //Item
-        var shopping = item.IsOnShoppingList
-        var favorite = item.IsFavoriteItem
+        var shopping = item.isOnShoppingList
+        var favorite = item.isFavoriteItem
 
         //Listeners
         btn_shopping_dg.setOnClickListener {
-            if(shopping){
+            if (shopping) {
                 shopping = false
                 btn_shopping_dg.setImageResource(R.drawable.ic_baseline_shopping_cart_24)
-            }else{
+            } else {
                 shopping = true
                 btn_shopping_dg.setImageResource(R.drawable.ic_baseline_remove_shopping_cart_24)
             }
         }
-        btn_favorite_dg.setOnClickListener{
+        btn_favorite_dg.setOnClickListener {
             if(favorite){
                 favorite = false
-                btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_24)
+                btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
             }else{
                 favorite = true
-                btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
+                btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_24)
             }
         }
-        btn_close.setOnClickListener{ //Update item on close
-            item.IsOnShoppingList = shopping
-            item.IsFavoriteItem = favorite
+        btn_close.setOnClickListener { //Update item on close
+            item.isOnShoppingList = shopping
+            item.isFavoriteItem = favorite
             itemViewModel.updateItem(item)
             dismiss();
         };
 
-        if (item.IsOnShoppingList) {
+        if (item.isOnShoppingList) {
             btn_shopping_dg.setImageResource(R.drawable.ic_baseline_remove_shopping_cart_24)
         } else {
             btn_shopping_dg.setImageResource(R.drawable.ic_baseline_shopping_cart_24)
         }
 
-        if (item.IsFavoriteItem) {
+        if (item.isFavoriteItem) {
             btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_24)
         } else {
             btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
         }
-
         return view;
 
     }

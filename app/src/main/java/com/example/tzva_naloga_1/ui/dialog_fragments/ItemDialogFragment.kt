@@ -55,12 +55,14 @@ class ItemDialogFragment(var item: ItemEntity) : DialogFragment() {
 
         //Item
         var stock = item.stock
-        var shopping = item.IsOnShoppingList
-        var favorite = item.IsFavoriteItem
+        var shopping = item.isOnShoppingList
+        var favorite = item.isFavoriteItem
 
         //Listeners
         btn_stock_minus.setOnClickListener{
-            stock--
+            if(stock > 0) {
+                stock--
+            }
             tv_stock_dg.text = stock.toString()
         }
         btn_stock_plus.setOnClickListener{
@@ -87,20 +89,21 @@ class ItemDialogFragment(var item: ItemEntity) : DialogFragment() {
         }
         btn_close.setOnClickListener{ //Update item on close
             item.stock = stock
-            item.IsOnShoppingList = shopping
-            item.IsFavoriteItem = favorite
+            item.isOnShoppingList = shopping
+            item.isFavoriteItem = favorite
             itemViewModel.updateItem(item)
             dismiss();
         };
 
-        if (item.IsOnShoppingList) {
+        if (item.isOnShoppingList) {
             btn_shopping_dg.setImageResource(R.drawable.ic_baseline_remove_shopping_cart_24)
         } else {
             btn_shopping_dg.setImageResource(R.drawable.ic_baseline_shopping_cart_24)
         }
 
-        if (item.IsFavoriteItem) {
+        if (item.isFavoriteItem) {
             btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_24)
+
         } else {
             btn_favorite_dg.setImageResource(R.drawable.ic_baseline_favorite_border_24)
         }

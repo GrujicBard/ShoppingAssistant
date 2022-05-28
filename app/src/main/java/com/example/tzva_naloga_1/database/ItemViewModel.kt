@@ -37,6 +37,9 @@ class ItemViewModel(private val repository: ItemRepository) : ViewModel(){
     fun deleteAllItemsSelected() = viewModelScope.launch {
         repository.deleteAllItemsSelected()
     }
+    fun deleteGarbage() = viewModelScope.launch {
+        repository.deleteGarbage()
+    }
 
 }
 

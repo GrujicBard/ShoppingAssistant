@@ -31,6 +31,14 @@
     <string name="dg_stock">Stock:</string>
     <string name="dg_description"><u>Description:</u></string>
 
+    <!-- Toast -->
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="deleteToast">Delete selected items?</string>
+    <string name="favoriteToast">Remove selected items from favorites list?</string>
+    <string name="shoppingToast">Remove selected items from shopping list?</string>
+    <string name="resetToast">Reset database?</string>
+
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

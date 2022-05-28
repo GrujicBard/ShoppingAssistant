@@ -10,10 +10,10 @@ interface ItemDao {
     @Query("SELECT * FROM item WHERE stock > 0 ORDER BY name DESC")
     fun getAllItems(): Flow<MutableList<ItemEntity>>
 
-    @Query("SELECT * FROM item WHERE IsFavoriteItem = 1 ORDER BY itemId DESC")
+    @Query("SELECT * FROM item WHERE isFavoriteItem = 1 ORDER BY itemId DESC")
     fun getAllFavoriteItems(): Flow<MutableList<ItemEntity>>
 
-    @Query("SELECT * FROM item WHERE IsOnShoppingList = 1 ORDER BY itemId DESC")
+    @Query("SELECT * FROM item WHERE isOnShoppingList = 1 ORDER BY itemId DESC")
     fun getAllShoppingItems(): Flow<MutableList<ItemEntity>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
@@ -33,4 +33,7 @@ interface ItemDao {
 
     @Query("DELETE FROM item WHERE selected = 1")
     suspend fun deleteAllSelected()
+
+    @Query("DELETE FROM item WHERE stock = 0 AND isFavoriteItem = 0 AND isOnShoppingList = 0")
+    suspend fun deleteGarbage()
 }

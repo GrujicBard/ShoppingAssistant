@@ -7,7 +7,7 @@
     <string name="btn_close">Zapri</string>
     <string name="btn_save">Shrani</string>
     <string name="btn_lang">Spremeni Jezik</string>
-    <string name="btn_nuke">Resetiraj bazo</string>
+    <string name="btn_nuke">Ponastavi bazo</string>
     <string name="calendar">Izberi datum</string>
     <string name="storage">Shramba</string>
     <string name="shop">Trgovina</string>
@@ -27,6 +27,14 @@
     <string name="currency">%.2f€</string>
     <string name="dg_stock">Zaloga:</string>
     <string name="dg_description"><u>Opis:</u></string>
+
+    <!-- Toast -->
+    <string name="confirm">Potrdi</string>
+    <string name="cancel">Prekini</string>
+    <string name="deleteToast">Izbrišem izbrane elemente?</string>
+    <string name="favoriteToast">Odstranim elemente iz seznama priljubljenih?</string>
+    <string name="shoppingToast">Odstranim elemente iz nakupovalnega seznama?</string>
+    <string name="resetToast">Ponastavi podatkovno bazo?</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Prvi Fragment</string>

@@ -44,12 +44,12 @@ class SettingsFragment : Fragment() {
 
         btn_nuke.setOnClickListener {
             val alertDialog = AlertDialog.Builder(requireContext())
-            alertDialog.setTitle("Do you want to reset database?")
-            alertDialog.setPositiveButton("Reset"){_,_ ->{}
+            alertDialog.setTitle(resources.getString(R.string.resetToast))
+            alertDialog.setPositiveButton(resources.getString(R.string.confirm)){_,_ ->{}
                 itemViewModel.deleteAllItems();
                 resetDatabase()
             }
-            alertDialog.setNegativeButton("Cancel"){_,_ ->}
+            alertDialog.setNegativeButton(resources.getString(R.string.cancel)){_,_ ->}
             alertDialog.show()
         };
 

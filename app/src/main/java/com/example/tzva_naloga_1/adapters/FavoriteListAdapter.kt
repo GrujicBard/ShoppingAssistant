@@ -1,25 +1,18 @@
 package com.example.tzva_naloga_1.adapters
 
 import android.annotation.SuppressLint
-import android.util.Log
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.asFlow
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tzva_naloga_1.R
 import com.example.tzva_naloga_1.database.ItemViewModel
-import com.example.tzva_naloga_1.database.ItemViewModelFactory
-import com.example.tzva_naloga_1.database.ItemsApplication
 import com.example.tzva_naloga_1.database.entities.ItemEntity
-import android.view.MenuInflater as menu
 
-class ItemListAdapter(
+class FavoriteListAdapter(
     private val onItemClickListener: OnItemClickListener,
     private val owner: LifecycleOwner,
     //val onItemLongClickListener: OnItemLongClickListener,
@@ -27,7 +20,7 @@ class ItemListAdapter(
     private val itemViewModel: ItemViewModel,
     private val showMenuDelete: (Boolean) -> Unit,
 ) :
-    ListAdapter<ItemEntity, ItemListAdapter.ItemViewHolder>(ItemDiffCallback()) {
+    ListAdapter<ItemEntity, FavoriteListAdapter.ItemViewHolder>(ItemDiffCallback()) {
     private var isEnable = false
     private var isSelectAll = false
     private var itemSelectedList = mutableListOf<Int>()
@@ -59,6 +52,7 @@ class ItemListAdapter(
                         rv_cb.visibility = View.GONE
                     }
                     itemsList?.get(position)?.selected  = false
+                    itemsList?.get(position)?.isFavoriteItem  = true
                     if(itemSelectedList.isEmpty()){
                         showMenuDelete(false)
                         isEnable = false
@@ -104,13 +98,14 @@ class ItemListAdapter(
     }
 
     private fun selectItem(
-        holder: ItemListAdapter.ItemViewHolder,
+        holder: FavoriteListAdapter.ItemViewHolder,
         item: ItemEntity,
         position: Int,
     ) {
         isEnable = true
         itemSelectedList.add(position)
         itemsList?.get(position)?.selected = true
+        itemsList?.get(position)?.isFavoriteItem  = false
         if(holder.rv_cb.visibility == View.GONE){
             holder.rv_cb.visibility = View.VISIBLE
         }
@@ -120,7 +115,6 @@ class ItemListAdapter(
     fun deleteSelectedItem() {
         if(itemSelectedList.isNotEmpty()){
             itemsList?.let { itemViewModel.updateItems(it) }
-            itemViewModel.deleteAllItemsSelected()
             isSelectAll = false
             isEnable = false
             itemSelectedList.clear()
@@ -134,12 +128,14 @@ class ItemListAdapter(
             itemSelectedList.clear()
             for(x in itemsList!!){
                 x.selected = false
+                x.isFavoriteItem = true
             }
         }else{
             isSelectAll = true
             for (i in 0 until itemsList!!.size) {
                 itemSelectedList.add(i)
                 itemsList!![i].selected = true
+                itemsList!![i].isFavoriteItem = false
             }
         }
         notifyDataSetChanged()
@@ -158,15 +154,5 @@ class ItemListAdapter(
 
     interface OnItemClickListener {
         fun onItemClick(item: ItemEntity)
-    }
-}
-
-class ItemDiffCallback : DiffUtil.ItemCallback<ItemEntity>() {
-    override fun areItemsTheSame(oldItem: ItemEntity, newItem: ItemEntity): Boolean {
-        return oldItem === newItem
-    }
-
-    override fun areContentsTheSame(oldItem: ItemEntity, newItem: ItemEntity): Boolean {
-        return oldItem.itemId == newItem.itemId
     }
 }

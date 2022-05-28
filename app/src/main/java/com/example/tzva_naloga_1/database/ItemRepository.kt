@@ -46,4 +46,10 @@ class ItemRepository(private val itemDao: ItemDao) {
     suspend fun deleteAllItemsSelected() {
         itemDao.deleteAllSelected()
     }
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    suspend fun deleteGarbage() {
+        itemDao.deleteGarbage()
+    }
 }
