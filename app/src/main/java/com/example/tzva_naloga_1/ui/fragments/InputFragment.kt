@@ -18,6 +18,7 @@ import com.example.tzva_naloga_1.database.entities.Shop
 import com.example.tzva_naloga_1.database.entities.Storage
 import com.google.firebase.database.*
 import com.google.gson.Gson
+import com.google.zxing.client.android.Intents
 import com.journeyapps.barcodescanner.ScanContract
 import com.journeyapps.barcodescanner.ScanIntentResult
 import com.journeyapps.barcodescanner.ScanOptions
@@ -119,13 +120,15 @@ class InputFragment : Fragment() {
         }*/
 
         btn_ean_scan.setOnClickListener {
-            barcodeLauncher.launch(ScanOptions());
+            val options = ScanOptions()
+            options.setDesiredBarcodeFormats(ScanOptions.ONE_D_CODE_TYPES)
+            options.setPrompt(resources.getString(R.string.barcode))
+            options.setBeepEnabled(false)
+            barcodeLauncher.launch(options);
         }
-
 
         btn_save.setOnClickListener {
             insertNewItem()
-
         }
 
         return view;
