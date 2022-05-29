@@ -123,7 +123,6 @@ class InputFragment : Fragment() {
             val options = ScanOptions()
             options.setDesiredBarcodeFormats(ScanOptions.ONE_D_CODE_TYPES)
             options.setPrompt(resources.getString(R.string.barcode))
-            options.setBeepEnabled(false)
             barcodeLauncher.launch(options);
         }
 
