@@ -2,6 +2,7 @@ package com.example.tzva_naloga_1.ui.fragments
 
 import android.app.AlertDialog
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
@@ -167,5 +168,11 @@ class DatabaseFragment : Fragment(), ItemListAdapter.OnItemClickListener {
     private fun close(){
         itemListAdapter!!.close()
         showDeleteMenu(false)
+    }
+
+    override fun onPause() {
+        menu_select_all!!.findItem(R.id.menu_select_all).setIcon(R.drawable.ic_baseline_select_all_24)
+        itemListAdapter!!.resetAdapter()
+        super.onPause()
     }
 }

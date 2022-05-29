@@ -124,10 +124,7 @@ class ShoppingListAdapter(
         if(isSelectAll){
             isSelectAll = false
             itemSelectedList.clear()
-            for(x in itemsList!!){
-                x.selected = false
-                x.isOnShoppingList = true
-            }
+            resetItemsList()
         }else{
             isSelectAll = true
             for (i in 0 until itemsList!!.size) {
@@ -142,12 +139,30 @@ class ShoppingListAdapter(
     @SuppressLint("NotifyDataSetChanged")
     fun close(){
         isEnable = false;
+        isSelectAll = false;
         itemSelectedList.clear()
+        resetItemsList()
+        showMenuDelete(false)
         notifyDataSetChanged()
     }
 
     fun isSelectAll(): Boolean{
         return isSelectAll
+    }
+
+    private fun resetItemsList(){
+        for(x in itemsList!!){
+            x.selected = false
+            x.isOnShoppingList = true
+        }
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun resetAdapter(){
+        isEnable = false;
+        isSelectAll = false;
+        itemSelectedList.clear()
+        notifyDataSetChanged()
     }
 
     interface OnItemClickListener {

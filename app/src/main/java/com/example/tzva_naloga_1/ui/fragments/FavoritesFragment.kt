@@ -163,4 +163,10 @@ class FavoritesFragment : Fragment(), FavoriteListAdapter.OnItemClickListener {
         favoriteListAdapter!!.close()
         showDeleteMenu(false)
     }
+
+    override fun onPause() {
+        menu_select_all!!.findItem(R.id.menu_select_all).setIcon(R.drawable.ic_baseline_select_all_24)
+        favoriteListAdapter!!.resetAdapter()
+        super.onPause()
+    }
 }
