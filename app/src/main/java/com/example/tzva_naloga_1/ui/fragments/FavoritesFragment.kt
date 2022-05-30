@@ -161,6 +161,7 @@ class FavoritesFragment : Fragment(), FavoriteListAdapter.OnItemClickListener {
 
     private fun close(){
         favoriteListAdapter!!.close()
+        menu_select_all!!.findItem(R.id.menu_select_all).setIcon(R.drawable.ic_baseline_select_all_24)
         showDeleteMenu(false)
     }
 

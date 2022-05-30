@@ -167,6 +167,7 @@ class DatabaseFragment : Fragment(), ItemListAdapter.OnItemClickListener {
 
     private fun close(){
         itemListAdapter!!.close()
+        menu_select_all!!.findItem(R.id.menu_select_all).setIcon(R.drawable.ic_baseline_select_all_24)
         showDeleteMenu(false)
     }
 

@@ -48,18 +48,20 @@ class ShoppingListAdapter(
                 val item = getItem(position)
                 if (itemSelectedList.contains(position)) {
                     itemSelectedList.remove(position)
-                    if(rv_cb.visibility == View.VISIBLE){
-                        rv_cb.visibility = View.GONE
-                    }
+//                    if(rv_cb.visibility == View.VISIBLE){
+//                        rv_cb.visibility = View.GONE
+//                    }
+                    rv_cb.setImageResource(R.drawable.ic_baseline_check_box_outline_blank_24)
                     itemsList?.get(position)?.selected  = false
                     itemsList?.get(position)?.isOnShoppingList  = true
-                    if(itemSelectedList.isEmpty()){
-                        showMenuDelete(false)
-                        isEnable = false
-                    }
+//                    if(itemSelectedList.isEmpty()){
+//                        showMenuDelete(false)
+//                        isEnable = false
+//                    }
                 } else if (isEnable) {
                     if(isSelectAll){
                         rv_cb.visibility = View.VISIBLE
+                        rv_cb.setImageResource(R.drawable.ic_baseline_check_box_24)
                     }
                     selectItem(this, item, position)
                 } else {
@@ -79,18 +81,24 @@ class ShoppingListAdapter(
         val item_name = item.name + ", " + item.quantity
         holder.apply {
             rv_tv_name.text = item_name
-            itemView.setOnLongClickListener {
-                selectItem(holder, item, position)
-                true
-            }
             if(!isEnable){
                 rv_cb.visibility = View.GONE
             }else{
+                rv_cb.visibility = View.VISIBLE
                 if(isSelectAll){
-                    rv_cb.visibility = View.VISIBLE
+                    rv_cb.setImageResource(R.drawable.ic_baseline_check_box_24)
                 }else if(!isSelectAll){
-                    rv_cb.visibility = View.GONE
+//                    rv_cb.visibility = View.GONE
+                    rv_cb.setImageResource(R.drawable.ic_baseline_check_box_outline_blank_24)
                 }
+            }
+            itemView.setOnLongClickListener {
+                selectAll()
+                selectAll()
+                rv_cb.visibility = View.VISIBLE
+                holder.rv_cb.setImageResource(R.drawable.ic_baseline_check_box_24) //doesn't work for some reason
+                selectItem(holder, item, position)
+                true
             }
         }
     }
@@ -107,6 +115,7 @@ class ShoppingListAdapter(
         if(holder.rv_cb.visibility == View.GONE){
             holder.rv_cb.visibility = View.VISIBLE
         }
+        holder.rv_cb.setImageResource(R.drawable.ic_baseline_check_box_24)
         showMenuDelete(true)
     }
 

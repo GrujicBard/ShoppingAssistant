@@ -55,17 +55,19 @@ class ItemListAdapter(
                 val item = getItem(position)
                 if (itemSelectedList.contains(position)) {
                     itemSelectedList.remove(position)
-                    if(rv_cb.visibility == View.VISIBLE){
-                        rv_cb.visibility = View.GONE
-                    }
+//                    if(rv_cb.visibility == View.VISIBLE){
+//                        rv_cb.visibility = View.GONE
+//                    }
+                    rv_cb.setImageResource(R.drawable.ic_baseline_check_box_outline_blank_24)
                     itemsList?.get(position)?.selected  = false
-                    if(itemSelectedList.isEmpty()){
-                        showMenuDelete(false)
-                        isEnable = false
-                    }
+//                    if(itemSelectedList.isEmpty()){
+//                        showMenuDelete(false)
+//                        isEnable = false
+//                    }
                 } else if (isEnable) {
                     if(isSelectAll){
                         rv_cb.visibility = View.VISIBLE
+                        rv_cb.setImageResource(R.drawable.ic_baseline_check_box_24)
                     }
                     selectItem(this, item, position)
                 } else {
@@ -87,18 +89,24 @@ class ItemListAdapter(
             rv_tv_name.text = item_name
             rv_tv_stock.text =
                 itemView.resources.getString(R.string.rv_stock, item.stock.toString())
-            itemView.setOnLongClickListener {
-                selectItem(holder, item, position)
-                true
-            }
             if(!isEnable){
                 rv_cb.visibility = View.GONE
             }else{
+                rv_cb.visibility = View.VISIBLE
                 if(isSelectAll){
-                    rv_cb.visibility = View.VISIBLE
+                    rv_cb.setImageResource(R.drawable.ic_baseline_check_box_24)
                 }else if(!isSelectAll){
-                    rv_cb.visibility = View.GONE
+//                    rv_cb.visibility = View.GONE
+                    rv_cb.setImageResource(R.drawable.ic_baseline_check_box_outline_blank_24)
                 }
+            }
+            itemView.setOnLongClickListener {
+                selectAll()
+                selectAll()
+                rv_cb.visibility = View.VISIBLE
+                holder.rv_cb.setImageResource(R.drawable.ic_baseline_check_box_24) //doesn't work for some reason
+                selectItem(holder, item, position)
+                true
             }
         }
     }
@@ -114,6 +122,7 @@ class ItemListAdapter(
         if(holder.rv_cb.visibility == View.GONE){
             holder.rv_cb.visibility = View.VISIBLE
         }
+        holder.rv_cb.setImageResource(R.drawable.ic_baseline_check_box_24)
         showMenuDelete(true)
     }
 
