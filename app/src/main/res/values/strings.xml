@@ -9,6 +9,7 @@
     <string name="btn_nuke">Reset database</string>
     <string name="calendar">Pick date</string>
     <string name="scan">Scan</string>
+    <string name="barcode">Scan a barcode</string>
 
 
     <!-- Items -->

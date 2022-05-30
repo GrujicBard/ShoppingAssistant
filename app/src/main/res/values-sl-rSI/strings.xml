@@ -22,6 +22,7 @@
     <string name="price">Cena</string>
     <string name="quantity">Količina</string>
     <string name="category">Kategorija izdelka</string>
+    <string name="barcode">Skeniraj barkodo</string>
 
     <!-- Item Dialog Fragment -->
     <string name="currency">%.2f€</string>
