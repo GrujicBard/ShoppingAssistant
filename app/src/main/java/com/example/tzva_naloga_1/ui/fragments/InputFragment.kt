@@ -206,9 +206,9 @@ class InputFragment : Fragment() {
                             et_stock.setText("1")
                             dd_storage.setText(Storage.FREEZER.toString(), false)
                             if(product.get("imgUrl").toString()==""){
-                                url= product.get("imgUrl").toString()
-                            }else{
                                 url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Solid_white_bordered.svg/2048px-Solid_white_bordered.svg.png"
+                            }else{
+                                url= product.get("imgUrl").toString()
                             }
                             //Set these from database
                             dd_cat.setText(ItemCategory.SALTY_SNACKS.toString(), false)
