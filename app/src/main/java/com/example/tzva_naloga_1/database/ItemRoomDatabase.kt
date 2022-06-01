@@ -13,7 +13,7 @@ import com.example.tzva_naloga_1.database.entities.Storage
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
-@Database(entities = [ItemEntity::class], version = 17, exportSchema = false)
+@Database(entities = [ItemEntity::class], version = 18, exportSchema = false)
 public abstract class ItemRoomDatabase: RoomDatabase() {
 
     abstract fun itemDao(): ItemDao;
@@ -51,6 +51,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 "Trajno polnomastno mleko, 3,5 % m.m., Mercator",
                 1.09,
                 "1L",
+                "https://trgovina.mercator.si/market/img/cache/products/4941/product_small_image/00031177.jpg",
                 6,
                 Shop.MERCATOR.toString(),
                 Storage.FREEZER.toString(),
@@ -64,6 +65,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 "Jajca L, hlevska reja, Mercator",
                 1.99,
                 "10 jajc",
+                "https://trgovina.mercator.si/market/img/cache/products/4169/product_small_image/00236876.jpg",
                 3,
                 Shop.MERCATOR.toString(),
                 Storage.FREEZER.toString(),
@@ -77,6 +79,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 "Slane palčke, Hrusty",
                 0.17,
                 "220g",
+                "https://trgovina.mercator.si/market/img/cache/products/8854/product_small_image/00801813.jpg",
                 1,
                 Shop.MERCATOR.toString(),
                 Storage.CUPBOARD.toString(),
@@ -93,6 +96,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 "Hrenovke piščančje IK, VP",
                 3.49,
                 "600g",
+                "https://trgovina.mercator.si/market/img/cache/products/4196/product_small_image/00695055.jpg",
                 2,
                 Shop.TUŠ.toString(),
                 Storage.FREEZER.toString(),
@@ -108,6 +112,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 "WC čistilo Power Aktiv Gel Pine, Bref",
                 1.78,
                 "700ml",
+                "https://trgovina.mercator.si/market/img/cache/products/4360/product_medium_image/00674022.jpg",
                 1,
                 Shop.MERCATOR.toString(),
                 Storage.BATHROOM.toString(),
@@ -121,6 +126,7 @@ public abstract class ItemRoomDatabase: RoomDatabase() {
                 "Temno pivo Kozel, 3,8 %",
                 1.23,
                 "0,5L",
+                "https://trgovina.mercator.si/market/img/cache/products/6032/product_small_image/00755437.jpg",
                 12,
                 Shop.SPAR.toString(),
                 Storage.CELLAR.toString(),

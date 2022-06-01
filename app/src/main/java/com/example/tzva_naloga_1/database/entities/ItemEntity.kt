@@ -8,13 +8,13 @@ import java.util.*
 
 @Entity(tableName = "item")
 data class ItemEntity(
-
     @PrimaryKey(autoGenerate = true)
     val itemId: Long = 0L,
     val EAN: String,
     val name: String,
     val price: Double,
     val quantity: String,
+    val url:String,
     var stock: Int,
     val shop: String,
     val storage: String,

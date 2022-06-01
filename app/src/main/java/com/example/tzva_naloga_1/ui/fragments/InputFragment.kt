@@ -38,6 +38,7 @@ class InputFragment : Fragment() {
     private lateinit var database: DatabaseReference
     private var market = ""
     private var ean = ""
+    private var url=""
 
     lateinit var et_EAN: EditText
     lateinit var et_item_name: EditText
@@ -140,6 +141,7 @@ class InputFragment : Fragment() {
             et_item_name.text.toString(),
             et_price.text.toString().toDouble(),
             et_quantity.text.toString(),
+            url,
             et_stock.text.toString().toInt(),
             dd_shop.text.toString(),
             dd_storage.text.toString(),
@@ -203,7 +205,11 @@ class InputFragment : Fragment() {
                             //default values
                             et_stock.setText("1")
                             dd_storage.setText(Storage.FREEZER.toString(), false)
-
+                            if(product.get("imgUrl").toString()==null || product.get("imgUrl").toString()==""){
+                                url= product.get("imgUrl").toString()
+                            }else{
+                                url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Solid_white_bordered.svg/2048px-Solid_white_bordered.svg.png"
+                            }
                             //Set these from database
                             dd_cat.setText(ItemCategory.MILK_EGGS_AND_DAIRY_PRODUCTS.toString(), false)
                             dd_shop.setText(Shop.SPAR.toString(), false)

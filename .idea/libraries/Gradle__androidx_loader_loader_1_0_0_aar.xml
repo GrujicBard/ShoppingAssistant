@@ -3,15 +3,18 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8d78942842e4749837a1f33ca3e068b/transformed/loader-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5b058cea1efa043aac0680451f4537a3/transformed/loader-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/5b058cea1efa043aac0680451f4537a3/transformed/loader-1.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/be37b5ac5896b2a3176e504a61d155da/transformed/loader-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/be37b5ac5896b2a3176e504a61d155da/transformed/loader-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../TZVA_naloga_1/caches/transforms-3/be37b5ac5896b2a3176e504a61d155da/transformed/loader-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/5b058cea1efa043aac0680451f4537a3/transformed/loader-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/caches/transforms-3/be37b5ac5896b2a3176e504a61d155da/transformed/loader-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/be37b5ac5896b2a3176e504a61d155da/transformed/loader-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/caches/transforms-3/be37b5ac5896b2a3176e504a61d155da/transformed/loader-1.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/be37b5ac5896b2a3176e504a61d155da/transformed/loader-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/be37b5ac5896b2a3176e504a61d155da/transformed/loader-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/be37b5ac5896b2a3176e504a61d155da/transformed/loader-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../TZVA_naloga_1/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/b9ef587f3e46c7fe5b00264989764e43ff45cada/loader-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/b9ef587f3e46c7fe5b00264989764e43ff45cada/loader-1.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/b9ef587f3e46c7fe5b00264989764e43ff45cada/loader-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_storage_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_storage_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_delete_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_remove_circle_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_remove_circle_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-anydpi-v26_ic_banner.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-anydpi-v26\\ic_banner.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_fragment_database.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\fragment_database.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_select_all_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_select_all_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_favorite_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_favorite_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_check_box_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_check_box_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_favorite_border_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_favorite_border_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_check_box_outline_blank_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_check_box_outline_blank_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_check_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_check_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_dropdown_item.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_fragment_favorites.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\fragment_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_close_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_close_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_fragment_input.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\fragment_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.tzva_naloga_1.app-merged_res-57:/layout_dialog_item_info.xml.flat",
+        "source": "com.example.tzva_naloga_1.app-main-59:/layout/dialog_item_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_dialog_item_info_no_stock.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\dialog_item_info_no_stock.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_deselect_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_deselect_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_dialog_item_info.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\dialog_item_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_settings_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_settings_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\menu_custom_menu.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\menu\\custom_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable-mdpi_ic_login_back.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable-mdpi\\ic_login_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-xhdpi_ic_banner.png.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-xhdpi\\ic_banner.png"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_fragment_shopping.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\fragment_shopping.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_image_stroke.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\image_stroke.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_add_circle_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_add_circle_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_remove_shopping_cart_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_remove_shopping_cart_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-xhdpi_ic_banner_foreground.png.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-xhdpi\\ic_banner_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable-mdpi_button_back.png.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable-mdpi\\button_back.png"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_recyclerview_item.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\recyclerview_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_baseline_shopping_cart_24.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_baseline_shopping_cart_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-merged_res-57:\\layout_content_login.xml.flat",
+        "source": "C:\\Users\\ana.plecko\\.gradle\\daemon\\7.3.3\\com.example.tzva_naloga_1.app-main-59:\\layout\\content_login.xml"
+    }
+]

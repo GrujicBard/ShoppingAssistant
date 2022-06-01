@@ -1,0 +1,649 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [androidx.room:room-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\67096428ce36b30e21d5ca285353f4b7\transformed\room-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\de38b8ef1c486d25458c692c9dd359a9\transformed\navigation-fragment-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\d357942049419b78ee082c02798169a0\transformed\navigation-fragment-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\afff87968a933e39eaa7edf876c53143\transformed\fragment-ktx-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\95e267a7b890e03fd8623709d8bdeb7f\transformed\navigation-ui-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\bcad20c093e6dab89777b9fa65a7a01d\transformed\navigation-runtime-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\34895974782aff3e285745e5d036f994\transformed\navigation-ui-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\d7f047c59b6c0064ddf2ca7e90c7a86d\transformed\navigation-runtime-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\1a05e5ac7b560cc74b5fbe3df5a63446\transformed\activity-ktx-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\c41f10ea5f9e9fb3c9ad7ed3f7c52942\transformed\navigation-common-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\1a6b7ab28f5f7fbf32cf24185d460bb9\transformed\navigation-common-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\2fa60f3e46cf12e35dcb2c29adec8818\transformed\lifecycle-viewmodel-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\293acacb0b11d8a9ceae4873dae2f137\transformed\lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\aac593e2c219e1bfc804ed024cf622a7\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:17:1-73:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\e7b531429692ca26f78b5c829e1e777c\transformed\browser-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\3a47cbc7347248f9e316334119c85ba0\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\c324521a48b0e35532bba653e5cceb67\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\73a121bba7bc6e5cea81dc30f96311ee\transformed\lifecycle-livedata-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:7.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\6a73d079fcaef58344c9666e837a0bdd\transformed\databinding-runtime-7.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:viewbinding:7.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2dfca83e30d27d11fcb23f24692051b3\transformed\viewbinding-7.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4a7dba70023f1652ca321554ca426112\transformed\material-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\8fe539fa429882566ed613c257769db0\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\e7cc7df8141e87bfc2c2664ca1c65cba\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:17:1-40:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\21fe206497f3a89d67057b02a214c0fb\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c8f9a475fc1de2dd4372f93831840aa\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\a842a262f3b0839dcd709d63f6c6c8c6\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b6a18ef9590b06a88fb16e1dc067870d\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\f903dfd77d4a01842c1a876c4a51b5d5\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\581fafa92861425cab76345d5bee8cc8\transformed\play-services-auth-base-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\8abcf8af6dc7fd506520ea17b427680b\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\fa978936b8b4e22df324e7b0e81d4ea6\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\7a57145b30d41a231acfd23ece395979\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9ae21df03d84723619c8c20d88e892bd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\606a1d451f7c514d7fb7b117af918eb0\transformed\fragment-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2f4195c30ba2f22d0454461c87356c7a\transformed\core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\5259798ee86ce1e32c60b479a24faddd\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\656365f0f6dc09776313ef821112f9ff\transformed\activity-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\1f5aff79a1975fa394fb4b681eecf6af\transformed\savedstate-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\41428c0d57b4423f15c91fcd3ce103ba\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\fcbc2d1e538a7ac922c03e391925c86a\transformed\savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\ca145301fb099a3bb69d658764db6032\transformed\lifecycle-livedata-core-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\e1657775825563da18e569ed3253736c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b09fb40ef6dad35a0d76fc7b768c02ee\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\be37b5ac5896b2a3176e504a61d155da\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\37470394a2d77f6a428f395f3162f80e\transformed\lifecycle-livedata-2.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\91615a62896ec13734cea2c4d9866537\transformed\lifecycle-livedata-core-2.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\2018ba8096dd71e06088bfe257dff46d\transformed\appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\619723a38da6b1d6463eee54047c116c\transformed\emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\f2a0f49b01986e6d4f28e6ad6b805137\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\699d373f3b8249bd3266c5f85dc64a1e\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9cfb51a7d63d0cf5801b5a0db239b3a6\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\115044f69c9351cd1cd04321852fbbef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\f96eafdc6573b3af5a5dd19055e8545a\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\406930d980af5f7aef93e9013ab8748f\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\a992858d1bc70b3d518b801925012679\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\be85f8fdd3ac57190c831c1ff499fe7f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\7e8ce26090614e4266292feb0dd5acdd\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\10fb0d773ac52532aa7faa7ef3612496\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.7.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\968115f5429502753d86870edda44a63\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\d57978001e7e08356208b09cd7c22356\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:17:1-56:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ana.plecko\.gradle\caches\transforms-3\007da11bcb03fb171af75966936c24f9\transformed\picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\c890f7890f6d84596dd473f25b52ac9d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\145d5ac3b81276253def360f89c722dc\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2497085032e866d9190a10ac128e0df8\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\681c9597332b4b91f1c0119c978c0c55\transformed\firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.room:room-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\fb1035faba4690b4c0a9580efdf48b08\transformed\room-runtime-2.4.2\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\ec8022d48fc5997cdc1de22314049087\transformed\lifecycle-viewmodel-2.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\c4f5bc837cbf842067ec319747aa24eb\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c365e88734dee8515f91fd14a2a80df\transformed\startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0ccb6d6b91e5f373fb0a653fbadff90b\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2371a3ab901ae4ba16ad17325b609a33\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\d9d3aed72096168144d8b57f80529cce\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\661354a1199f4c4ce42e63a0d3f3c202\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\3082f40504579d5acfa533b9dd8f25da\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\e9f39d2c350a52f9c7f0ba4d3cc989fb\transformed\sqlite-framework-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\f7362ad3c1a930fc23fd8d296f3c98f3\transformed\sqlite-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\29e052fe74e7598f46fac13530fff3c1\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\10ae21f3fab5ace739c72d709ece4445\transformed\exifinterface-27.1.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:5:5-26:19
+MERGED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:26:5-71:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4a7dba70023f1652ca321554ca426112\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4a7dba70023f1652ca321554ca426112\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\8fe539fa429882566ed613c257769db0\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\8fe539fa429882566ed613c257769db0\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c8f9a475fc1de2dd4372f93831840aa\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c8f9a475fc1de2dd4372f93831840aa\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\a842a262f3b0839dcd709d63f6c6c8c6\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\a842a262f3b0839dcd709d63f6c6c8c6\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b6a18ef9590b06a88fb16e1dc067870d\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b6a18ef9590b06a88fb16e1dc067870d\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\fa978936b8b4e22df324e7b0e81d4ea6\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\fa978936b8b4e22df324e7b0e81d4ea6\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\7a57145b30d41a231acfd23ece395979\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\7a57145b30d41a231acfd23ece395979\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9ae21df03d84723619c8c20d88e892bd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9ae21df03d84723619c8c20d88e892bd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.7.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\968115f5429502753d86870edda44a63\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\968115f5429502753d86870edda44a63\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:46:5-54:19
+MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:46:5-54:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ana.plecko\.gradle\caches\transforms-3\007da11bcb03fb171af75966936c24f9\transformed\picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ana.plecko\.gradle\caches\transforms-3\007da11bcb03fb171af75966936c24f9\transformed\picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [androidx.room:room-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\fb1035faba4690b4c0a9580efdf48b08\transformed\room-runtime-2.4.2\AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\fb1035faba4690b4c0a9580efdf48b08\transformed\room-runtime-2.4.2\AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\c4f5bc837cbf842067ec319747aa24eb\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\c4f5bc837cbf842067ec319747aa24eb\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c365e88734dee8515f91fd14a2a80df\transformed\startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c365e88734dee8515f91fd14a2a80df\transformed\startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\968115f5429502753d86870edda44a63\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:10:9-41
+	android:hardwareAccelerated
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:7:9-43
+	android:roundIcon
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:13:9-51
+	android:name
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:6:9-50
+activity#com.example.tzva_naloga_1.ui.MainActivity
+ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:14:9-17:32
+	android:label
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:17:13-29
+	android:exported
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:16:13-37
+	android:name
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:15:13-44
+activity#com.example.tzva_naloga_1.ui.LoginActivity
+ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:18:9-25:20
+	android:exported
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:20:13-36
+	android:name
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:19:13-45
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:21:13-24:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml:23:27-74
+uses-sdk
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+MERGED from [androidx.room:room-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\67096428ce36b30e21d5ca285353f4b7\transformed\room-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\67096428ce36b30e21d5ca285353f4b7\transformed\room-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\de38b8ef1c486d25458c692c9dd359a9\transformed\navigation-fragment-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\de38b8ef1c486d25458c692c9dd359a9\transformed\navigation-fragment-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\d357942049419b78ee082c02798169a0\transformed\navigation-fragment-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\d357942049419b78ee082c02798169a0\transformed\navigation-fragment-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\afff87968a933e39eaa7edf876c53143\transformed\fragment-ktx-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\afff87968a933e39eaa7edf876c53143\transformed\fragment-ktx-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\95e267a7b890e03fd8623709d8bdeb7f\transformed\navigation-ui-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\95e267a7b890e03fd8623709d8bdeb7f\transformed\navigation-ui-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\bcad20c093e6dab89777b9fa65a7a01d\transformed\navigation-runtime-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\bcad20c093e6dab89777b9fa65a7a01d\transformed\navigation-runtime-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\34895974782aff3e285745e5d036f994\transformed\navigation-ui-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\34895974782aff3e285745e5d036f994\transformed\navigation-ui-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\d7f047c59b6c0064ddf2ca7e90c7a86d\transformed\navigation-runtime-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\d7f047c59b6c0064ddf2ca7e90c7a86d\transformed\navigation-runtime-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\1a05e5ac7b560cc74b5fbe3df5a63446\transformed\activity-ktx-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\1a05e5ac7b560cc74b5fbe3df5a63446\transformed\activity-ktx-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\c41f10ea5f9e9fb3c9ad7ed3f7c52942\transformed\navigation-common-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\c41f10ea5f9e9fb3c9ad7ed3f7c52942\transformed\navigation-common-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\1a6b7ab28f5f7fbf32cf24185d460bb9\transformed\navigation-common-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\1a6b7ab28f5f7fbf32cf24185d460bb9\transformed\navigation-common-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\2fa60f3e46cf12e35dcb2c29adec8818\transformed\lifecycle-viewmodel-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\2fa60f3e46cf12e35dcb2c29adec8818\transformed\lifecycle-viewmodel-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\293acacb0b11d8a9ceae4873dae2f137\transformed\lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\293acacb0b11d8a9ceae4873dae2f137\transformed\lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\aac593e2c219e1bfc804ed024cf622a7\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\aac593e2c219e1bfc804ed024cf622a7\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:21:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\e7b531429692ca26f78b5c829e1e777c\transformed\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\e7b531429692ca26f78b5c829e1e777c\transformed\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\3a47cbc7347248f9e316334119c85ba0\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\3a47cbc7347248f9e316334119c85ba0\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\c324521a48b0e35532bba653e5cceb67\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\c324521a48b0e35532bba653e5cceb67\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\73a121bba7bc6e5cea81dc30f96311ee\transformed\lifecycle-livedata-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\73a121bba7bc6e5cea81dc30f96311ee\transformed\lifecycle-livedata-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-runtime:7.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\6a73d079fcaef58344c9666e837a0bdd\transformed\databinding-runtime-7.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-runtime:7.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\6a73d079fcaef58344c9666e837a0bdd\transformed\databinding-runtime-7.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2dfca83e30d27d11fcb23f24692051b3\transformed\viewbinding-7.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2dfca83e30d27d11fcb23f24692051b3\transformed\viewbinding-7.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4a7dba70023f1652ca321554ca426112\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4a7dba70023f1652ca321554ca426112\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\8fe539fa429882566ed613c257769db0\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\8fe539fa429882566ed613c257769db0\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\e7cc7df8141e87bfc2c2664ca1c65cba\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\e7cc7df8141e87bfc2c2664ca1c65cba\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\21fe206497f3a89d67057b02a214c0fb\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\21fe206497f3a89d67057b02a214c0fb\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c8f9a475fc1de2dd4372f93831840aa\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c8f9a475fc1de2dd4372f93831840aa\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\a842a262f3b0839dcd709d63f6c6c8c6\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\a842a262f3b0839dcd709d63f6c6c8c6\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b6a18ef9590b06a88fb16e1dc067870d\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b6a18ef9590b06a88fb16e1dc067870d\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\f903dfd77d4a01842c1a876c4a51b5d5\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\f903dfd77d4a01842c1a876c4a51b5d5\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\581fafa92861425cab76345d5bee8cc8\transformed\play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\581fafa92861425cab76345d5bee8cc8\transformed\play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\8abcf8af6dc7fd506520ea17b427680b\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\8abcf8af6dc7fd506520ea17b427680b\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\fa978936b8b4e22df324e7b0e81d4ea6\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\fa978936b8b4e22df324e7b0e81d4ea6\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\7a57145b30d41a231acfd23ece395979\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\7a57145b30d41a231acfd23ece395979\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9ae21df03d84723619c8c20d88e892bd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9ae21df03d84723619c8c20d88e892bd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\606a1d451f7c514d7fb7b117af918eb0\transformed\fragment-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\606a1d451f7c514d7fb7b117af918eb0\transformed\fragment-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2f4195c30ba2f22d0454461c87356c7a\transformed\core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2f4195c30ba2f22d0454461c87356c7a\transformed\core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\5259798ee86ce1e32c60b479a24faddd\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\5259798ee86ce1e32c60b479a24faddd\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\656365f0f6dc09776313ef821112f9ff\transformed\activity-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\656365f0f6dc09776313ef821112f9ff\transformed\activity-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\1f5aff79a1975fa394fb4b681eecf6af\transformed\savedstate-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\1f5aff79a1975fa394fb4b681eecf6af\transformed\savedstate-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\41428c0d57b4423f15c91fcd3ce103ba\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\41428c0d57b4423f15c91fcd3ce103ba\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\fcbc2d1e538a7ac922c03e391925c86a\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\fcbc2d1e538a7ac922c03e391925c86a\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\ca145301fb099a3bb69d658764db6032\transformed\lifecycle-livedata-core-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\ca145301fb099a3bb69d658764db6032\transformed\lifecycle-livedata-core-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\e1657775825563da18e569ed3253736c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\e1657775825563da18e569ed3253736c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b09fb40ef6dad35a0d76fc7b768c02ee\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b09fb40ef6dad35a0d76fc7b768c02ee\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\be37b5ac5896b2a3176e504a61d155da\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\be37b5ac5896b2a3176e504a61d155da\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\37470394a2d77f6a428f395f3162f80e\transformed\lifecycle-livedata-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\37470394a2d77f6a428f395f3162f80e\transformed\lifecycle-livedata-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\91615a62896ec13734cea2c4d9866537\transformed\lifecycle-livedata-core-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\91615a62896ec13734cea2c4d9866537\transformed\lifecycle-livedata-core-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\2018ba8096dd71e06088bfe257dff46d\transformed\appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\2018ba8096dd71e06088bfe257dff46d\transformed\appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\619723a38da6b1d6463eee54047c116c\transformed\emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\619723a38da6b1d6463eee54047c116c\transformed\emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\f2a0f49b01986e6d4f28e6ad6b805137\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\f2a0f49b01986e6d4f28e6ad6b805137\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\699d373f3b8249bd3266c5f85dc64a1e\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\699d373f3b8249bd3266c5f85dc64a1e\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9cfb51a7d63d0cf5801b5a0db239b3a6\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9cfb51a7d63d0cf5801b5a0db239b3a6\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\115044f69c9351cd1cd04321852fbbef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\115044f69c9351cd1cd04321852fbbef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\f96eafdc6573b3af5a5dd19055e8545a\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\f96eafdc6573b3af5a5dd19055e8545a\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\406930d980af5f7aef93e9013ab8748f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\406930d980af5f7aef93e9013ab8748f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\a992858d1bc70b3d518b801925012679\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\a992858d1bc70b3d518b801925012679\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\be85f8fdd3ac57190c831c1ff499fe7f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\be85f8fdd3ac57190c831c1ff499fe7f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\7e8ce26090614e4266292feb0dd5acdd\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\7e8ce26090614e4266292feb0dd5acdd\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\10fb0d773ac52532aa7faa7ef3612496\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\10fb0d773ac52532aa7faa7ef3612496\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\968115f5429502753d86870edda44a63\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\968115f5429502753d86870edda44a63\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\d57978001e7e08356208b09cd7c22356\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\d57978001e7e08356208b09cd7c22356\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ana.plecko\.gradle\caches\transforms-3\007da11bcb03fb171af75966936c24f9\transformed\picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ana.plecko\.gradle\caches\transforms-3\007da11bcb03fb171af75966936c24f9\transformed\picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\c890f7890f6d84596dd473f25b52ac9d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\c890f7890f6d84596dd473f25b52ac9d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\145d5ac3b81276253def360f89c722dc\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\145d5ac3b81276253def360f89c722dc\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2497085032e866d9190a10ac128e0df8\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2497085032e866d9190a10ac128e0df8\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\681c9597332b4b91f1c0119c978c0c55\transformed\firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\681c9597332b4b91f1c0119c978c0c55\transformed\firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.room:room-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\fb1035faba4690b4c0a9580efdf48b08\transformed\room-runtime-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\fb1035faba4690b4c0a9580efdf48b08\transformed\room-runtime-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\ec8022d48fc5997cdc1de22314049087\transformed\lifecycle-viewmodel-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\ec8022d48fc5997cdc1de22314049087\transformed\lifecycle-viewmodel-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\c4f5bc837cbf842067ec319747aa24eb\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\c4f5bc837cbf842067ec319747aa24eb\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c365e88734dee8515f91fd14a2a80df\transformed\startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c365e88734dee8515f91fd14a2a80df\transformed\startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0ccb6d6b91e5f373fb0a653fbadff90b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0ccb6d6b91e5f373fb0a653fbadff90b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2371a3ab901ae4ba16ad17325b609a33\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\2371a3ab901ae4ba16ad17325b609a33\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\d9d3aed72096168144d8b57f80529cce\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\d9d3aed72096168144d8b57f80529cce\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\661354a1199f4c4ce42e63a0d3f3c202\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\661354a1199f4c4ce42e63a0d3f3c202\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\3082f40504579d5acfa533b9dd8f25da\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\3082f40504579d5acfa533b9dd8f25da\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\e9f39d2c350a52f9c7f0ba4d3cc989fb\transformed\sqlite-framework-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\e9f39d2c350a52f9c7f0ba4d3cc989fb\transformed\sqlite-framework-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\f7362ad3c1a930fc23fd8d296f3c98f3\transformed\sqlite-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\f7362ad3c1a930fc23fd8d296f3c98f3\transformed\sqlite-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\29e052fe74e7598f46fac13530fff3c1\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\29e052fe74e7598f46fac13530fff3c1\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\10ae21f3fab5ace739c72d709ece4445\transformed\exifinterface-27.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\10ae21f3fab5ace739c72d709ece4445\transformed\exifinterface-27.1.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ana.plecko\Documents\Faks\2.stopnja\2\TVA\PROJEKT\TZVA_naloga_1\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:25:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:24:22-76
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:27:9-44:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:29:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:28:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:33:13-43:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:34:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:36:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:36:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:37:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:37:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:39:17-42:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:41:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:40:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:42:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:45:9-62:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:47:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:49:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:48:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:46:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:51:13-61:29
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:66:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:65:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:67:13-69:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:69:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.4] C:\Users\ana.plecko\.gradle\caches\transforms-3\7ebb784f1ba4f9fefa55650031a5ee80\transformed\firebase-auth-21.0.4\AndroidManifest.xml:68:17-109
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\b9a5a57a8f2bf0e2cbb3d37dc878cda8\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\22650a4b36cb8fe498a6b3256da4c50e\transformed\play-services-auth-20.2.0\AndroidManifest.xml:34:13-89
+meta-data#com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar
+ADDED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database-ktx:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\06fab5f2e41e603d15e04f08dd9c5dd6\transformed\firebase-database-ktx-20.0.5\AndroidManifest.xml:16:17-124
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ana.plecko\.gradle\caches\transforms-3\0cc5484948e59fae1c89efce4970cdf1\transformed\firebase-database-20.0.5\AndroidManifest.xml:33:17-109
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\03a38ad0674bb54c83a1bc2ce00b7b94\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:16:17-113
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\89848a76792b1f5c46b2a025de94aefe\transformed\firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\fa978936b8b4e22df324e7b0e81d4ea6\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\fa978936b8b4e22df324e7b0e81d4ea6\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\fa978936b8b4e22df324e7b0e81d4ea6\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\ana.plecko\.gradle\caches\transforms-3\fa978936b8b4e22df324e7b0e81d4ea6\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9ae21df03d84723619c8c20d88e892bd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9ae21df03d84723619c8c20d88e892bd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9ae21df03d84723619c8c20d88e892bd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c365e88734dee8515f91fd14a2a80df\transformed\startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\0c365e88734dee8515f91fd14a2a80df\transformed\startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\4393de494a724e0a56cc70f17586bb7f\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\9f3716363ce8083316253ee203a458bc\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+uses-permission#android.permission.CAMERA
+ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:22:22-62
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\ana.plecko\.gradle\caches\transforms-3\14cb7db224eeca89a0a077d66d45d2eb\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ana.plecko\.gradle\caches\transforms-3\007da11bcb03fb171af75966936c24f9\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ana.plecko\.gradle\caches\transforms-3\007da11bcb03fb171af75966936c24f9\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ana.plecko\.gradle\caches\transforms-3\007da11bcb03fb171af75966936c24f9\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ana.plecko\.gradle\caches\transforms-3\007da11bcb03fb171af75966936c24f9\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\fb1035faba4690b4c0a9580efdf48b08\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\fb1035faba4690b4c0a9580efdf48b08\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\fb1035faba4690b4c0a9580efdf48b08\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.4.2] C:\Users\ana.plecko\.gradle\caches\transforms-3\fb1035faba4690b4c0a9580efdf48b08\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74

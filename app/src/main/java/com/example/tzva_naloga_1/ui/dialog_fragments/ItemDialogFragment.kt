@@ -1,5 +1,7 @@
 package com.example.tzva_naloga_1.ui.dialog_fragments
 
+import android.icu.number.NumberFormatter.with
+import android.icu.number.NumberRangeFormatter.with
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +14,8 @@ import com.example.tzva_naloga_1.database.ItemViewModel
 import com.example.tzva_naloga_1.database.ItemViewModelFactory
 import com.example.tzva_naloga_1.database.ItemsApplication
 import com.example.tzva_naloga_1.database.entities.ItemEntity
+import com.squareup.picasso.Picasso
+
 
 class ItemDialogFragment(var item: ItemEntity) : DialogFragment() {
 
@@ -29,6 +33,7 @@ class ItemDialogFragment(var item: ItemEntity) : DialogFragment() {
 
         //Text Views
         val tv_name_dg: TextView = view.findViewById(R.id.tv_name_dg);
+
         val tv_ean_dg: TextView = view.findViewById(R.id.tv_ean_dg);
         val tv_shop_dg: TextView = view.findViewById(R.id.tv_shop_dg);
         val tv_quantity_dg: TextView = view.findViewById(R.id.tv_quantity_dg);
@@ -45,6 +50,10 @@ class ItemDialogFragment(var item: ItemEntity) : DialogFragment() {
 
         //Image
         val iv_pic_dg: ImageView = view.findViewById(R.id.iv_pic_dg);
+
+        val url = item.url
+        Picasso.get().load(url).into(iv_pic_dg)
+
         tv_name_dg.text = item.name
         tv_ean_dg.text = item.EAN
         tv_shop_dg.text = item.shop

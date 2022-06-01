@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TZVA_naloga_1" parent="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        
+        <item name="colorPrimary">#0080AE</item>
+        <item name="colorPrimaryVariant">#0080AE</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">#0080AE</item>
+        <item name="colorSecondaryVariant">#0080AE</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>
