@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import com.example.tzva_naloga_1.R
 import com.example.tzva_naloga_1.database.*
 import com.example.tzva_naloga_1.database.entities.ItemEntity
+import com.squareup.picasso.Picasso
 
 class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
 
@@ -40,6 +41,8 @@ class ShoppingItemDialogFragment(var item: ItemEntity) : DialogFragment() {
 
         //Image
         val iv_pic_dg: ImageView = view.findViewById(R.id.iv_pic_dg);
+        val url = item.url
+        Picasso.get().load(url).into(iv_pic_dg)
         tv_name_dg.text = item.name
         tv_ean_dg.text = item.EAN
         tv_shop_dg.text = item.shop
