@@ -1,4 +1,4 @@
-# Shopping_assistant
+# Shopping Assistant
 This is an application called Shopping Assistant, which helps users shop for and track their groceries. The app provides a user-friendly interface and various features to make grocery shopping more convenient. 
 
 ## Features
@@ -34,7 +34,7 @@ The Groceries app is built using the following technologies:
 
 ## Application screenshots
 
-![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/63640f97-7bf6-4e72-9ebc-a9228e0230a4) ![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/0e9c3aff-711d-45ae-a507-dee90002ff74)
+![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/63640f97-7bf6-4e72-9ebc-a9228e0230a4)![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/0e9c3aff-711d-45ae-a507-dee90002ff74)
 ![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/cc855afa-e118-49b7-952c-4d7c26a907c4) ![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/592e1141-295c-4325-84d7-67172f69ffed)
 ![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/ef9c0593-0254-4d29-8e10-784cedd4b3d9) ![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/cbe6df02-a2e5-4826-816d-17d475de735f)
 
