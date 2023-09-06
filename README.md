@@ -34,9 +34,21 @@ The Groceries app is built using the following technologies:
 
 ## Application screenshots
 
-![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/63640f97-7bf6-4e72-9ebc-a9228e0230a4)![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/0e9c3aff-711d-45ae-a507-dee90002ff74)
-![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/cc855afa-e118-49b7-952c-4d7c26a907c4) ![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/592e1141-295c-4325-84d7-67172f69ffed)
-![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/ef9c0593-0254-4d29-8e10-784cedd4b3d9) ![image](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/cbe6df02-a2e5-4826-816d-17d475de735f)
+![1](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/09299721-529f-4893-9033-3be4694c821a) ![2](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/0edab0f6-9a10-4982-8716-83766fd4f7ed) ![3](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/f78cff6e-d797-4d5c-a2dd-134fb71a3da1) ![4](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/58de8f0c-c154-4517-a479-2081c85a6027) ![5](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/6b3000dd-e04e-4d73-bd82-540589743da6) ![6](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/0bdf8509-4912-4480-a1f5-56eb92eff80a)
+ ![7](https://github.com/GrujicBard/Shopping_assistant/assets/33715866/37e54d50-af1d-4955-8265-ef7981969a81)
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
 
 
 
